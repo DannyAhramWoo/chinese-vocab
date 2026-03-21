@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'photos/**'
-  workflow_dispatch:
+  workflow_dispatch:  # 수동 실행 버튼 활성화
 
 jobs:
   process-photo:
@@ -22,6 +22,7 @@ jobs:
       - name: 변경된 사진 파일 목록 확인
         id: changed
         run: |
+          git config core.quotepath false
           CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'photos/**')
           echo "변경된 파일:"
           echo "$CHANGED"
