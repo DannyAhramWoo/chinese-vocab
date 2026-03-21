@@ -126,22 +126,34 @@ def main():
         print("ERROR: ANTHROPIC_API_KEY 환경변수가 설정되지 않았습니다")
         sys.exit(1)
 
+    image_extensions = {'.jpg', '.jpeg', '.png', '.heic', '.heif', '.webp'}
+
     # 변경된 파일 목록 가져오기
     changed_files_env = os.environ.get('CHANGED_FILES', '')
     changed_files = [f.strip() for f in changed_files_env.split('\n') if f.strip()]
 
-    image_extensions = {'.jpg', '.jpeg', '.png', '.heic', '.heif', '.webp'}
-    photo_files = [
-        f for f in changed_files
-        if f.startswith('photos/') and Path(f).suffix.lower() in image_extensions
-    ]
-
-    # 실제로 존재하는 파일만 처리
-    photo_files = [f for f in photo_files if Path(f).exists()]
+    if changed_files:
+        # 자동 실행: push로 변경된 사진만 처리
+        photo_files = [
+            f for f in changed_files
+            if f.startswith('photos/') and Path(f).suffix.lower() in image_extensions
+            and Path(f).exists()
+        ]
+    else:
+        # 수동 실행(workflow_dispatch): photos/ 폴더 전체 스캔
+        print("수동 실행: photos/ 폴더 전체를 스캔합니다")
+        photo_files = [
+            str(p) for p in Path('photos').rglob('*')
+            if p.suffix.lower() in image_extensions
+            and p.is_file()
+            and not p.name.startswith('.')
+        ]
 
     if not photo_files:
-        print("처리할 새 사진이 없습니다")
+        print("처리할 사진이 없습니다")
         return
+
+    print(f"처리할 사진 {len(photo_files)}개 발견")
 
     client = anthropic.Anthropic(api_key=api_key)
     data_js_path = Path('data.js')
