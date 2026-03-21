@@ -65,7 +65,7 @@ window.VOCAB_DATA = [
     "id": "hakwon_20260321_Unknown",
     "source": "학원",
     "date": "2026-03-21",
-    "lesson": "Unknown",
+    "lesson": "T1L11-2",
     "groups": [
       {
         "name": "认读词语 · 읽기 단어",
