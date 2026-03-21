@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'photos/**'
+  workflow_dispatch:
 
 jobs:
   process-photo:
