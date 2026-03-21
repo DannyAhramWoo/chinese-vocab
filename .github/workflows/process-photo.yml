@@ -1,0 +1,51 @@
+name: 📸 사진에서 단어 자동 추출
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'photos/**'
+
+jobs:
+  process-photo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: 변경된 사진 파일 목록 확인
+        id: changed
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'photos/**')
+          echo "변경된 파일:"
+          echo "$CHANGED"
+          echo "CHANGED_FILES<<EOF" >> $GITHUB_ENV
+          echo "$CHANGED" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 라이브러리 설치
+        run: pip install anthropic pillow pillow-heif
+
+      - name: 단어 추출 실행
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CHANGED_FILES: ${{ env.CHANGED_FILES }}
+        run: python process_photo.py
+
+      - name: data.js 변경사항 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.js
+          git diff --staged --quiet || git commit -m "✨ 새 단어 자동 추가 (사진 분석)"
+          git push
