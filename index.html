@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>우지언 중국어 단어장</title>
+<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #e8f4fd 0%, #f0e8ff 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+.app { width: 100%; max-width: 460px; }
+
+/* ── SCREENS ── */
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* ── HOME ── */
+.home-header { text-align: center; padding: 40px 0 36px; }
+.home-header .emoji { font-size: 56px; display: block; margin-bottom: 8px; }
+.home-header h1 { font-size: 26px; font-weight: 800; color: #222; }
+.home-header p  { color: #888; font-size: 15px; margin-top: 4px; }
+
+.source-btn {
+  display: flex; align-items: center; gap: 14px;
+  width: 100%; padding: 22px 24px; margin-bottom: 14px;
+  border: none; border-radius: 18px; font-size: 20px; font-weight: 700;
+  cursor: pointer; transition: transform 0.12s, box-shadow 0.12s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12); color: white;
+}
+.source-btn:active { transform: scale(0.97); }
+.source-btn .icon  { font-size: 28px; }
+.source-btn .label { flex: 1; text-align: left; }
+.source-btn .count { font-size: 14px; font-weight: 400; opacity: 0.85; }
+.btn-hakwon { background: linear-gradient(135deg, #43a047, #2e7d32); }
+.btn-hakgyo { background: linear-gradient(135deg, #1976d2, #0d47a1); }
+
+/* ── SESSION LIST ── */
+.top-bar {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 20px; padding-top: 8px;
+}
+.back-btn {
+  background: white; border: none; border-radius: 10px;
+  width: 38px; height: 38px; font-size: 18px; cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex; align-items: center; justify-content: center;
+}
+.top-bar h2 { font-size: 20px; font-weight: 700; color: #222; }
+
+.session-card {
+  background: white; border-radius: 14px; padding: 18px 20px; margin-bottom: 12px;
+  cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.1s; display: flex; align-items: center; gap: 14px;
+}
+.session-card:active { transform: scale(0.98); }
+.session-card .session-icon { font-size: 30px; }
+.session-card .session-info { flex: 1; }
+.session-date  { font-size: 12px; color: #aaa; margin-bottom: 2px; }
+.session-name  { font-size: 17px; font-weight: 700; color: #222; }
+.session-count { font-size: 13px; color: #888; margin-top: 2px; }
+.session-arrow { font-size: 18px; color: #ccc; }
+.no-sessions { text-align: center; color: #aaa; padding: 60px 20px; font-size: 16px; }
+
+/* ── FLASHCARD ── */
+.progress-row {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+}
+.progress-bar-wrap {
+  flex: 1; background: #e0e0e0; border-radius: 6px; height: 8px; overflow: hidden;
+}
+.progress-bar {
+  background: linear-gradient(90deg, #43a047, #66bb6a);
+  height: 8px; border-radius: 6px; transition: width 0.4s ease;
+}
+.progress-text { font-size: 13px; color: #888; white-space: nowrap; }
+.group-name { font-size: 12px; color: #aaa; text-align: center; margin-bottom: 14px; }
+
+/* Card */
+.card {
+  background: white; border-radius: 24px; padding: 28px 24px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1); margin-bottom: 14px;
+}
+
+/* Question section — always visible */
+.card-question { text-align: center; padding-bottom: 20px; }
+.question-korean { font-size: 30px; font-weight: 800; color: #222; margin-bottom: 8px; }
+.question-chinese-def { font-size: 15px; color: #888; line-height: 1.5; }
+
+/* Dashed separator */
+.card-sep {
+  border: none; border-top: 2px dashed #eee; margin: 0 0 20px;
+}
+
+/* Hanzi cover — tap to reveal */
+.hanzi-cover {
+  background: #f8f8f8;
+  border: 2px dashed #ddd;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  user-select: none;
+}
+.hanzi-cover:active { background: #f0f0f0; border-color: #bbb; }
+.cover-icon { font-size: 32px; margin-bottom: 8px; }
+.cover-text { font-size: 15px; color: #bbb; font-weight: 600; }
+
+/* Hanzi revealed */
+.hanzi-revealed { text-align: center; display: none; }
+.hanzi-revealed.visible { display: block; }
+.hanzi {
+  font-size: 76px; line-height: 1.1; color: #1a1a1a;
+  letter-spacing: 4px; margin-bottom: 10px;
+}
+.pinyin { font-size: 20px; color: #999; letter-spacing: 1px; }
+
+/* Stroke animation panel */
+.stroke-panel {
+  background: #fffbec;
+  border: 1.5px solid #ffd54f;
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  display: none;
+  text-align: center;
+}
+.stroke-panel.visible { display: block; }
+.panel-label { font-size: 12px; font-weight: 600; margin-bottom: 10px; letter-spacing: 0.5px; }
+.stroke-label { color: #f9a825; }
+.hint-writers {
+  display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;
+}
+.hint-writer-wrap { text-align: center; }
+.hint-writer-char { font-size: 11px; color: #bbb; margin-top: 2px; }
+
+/* Hint panel — pinyin only */
+.hint-panel {
+  background: #e8f5e9;
+  border: 1.5px solid #a5d6a7;
+  border-radius: 16px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  display: none;
+  text-align: center;
+}
+.hint-panel.visible { display: block; }
+.hint-label { color: #2e7d32; }
+.hint-pinyin { font-size: 22px; color: #1b5e20; font-weight: 600; margin-top: 4px; letter-spacing: 1px; }
+
+/* Buttons */
+.btn-row { display: flex; gap: 10px; margin-bottom: 10px; }
+.btn {
+  flex: 1; padding: 15px 10px; border: none; border-radius: 14px;
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  transition: transform 0.1s, opacity 0.1s;
+}
+.btn:active { transform: scale(0.97); opacity: 0.9; }
+.btn-sound { background: #e3f2fd; color: #1565c0; }
+.btn-hint  { background: #e8f5e9; color: #2e7d32; }
+
+.answer-btns { display: none; }
+.answer-btns.visible { display: flex; gap: 10px; margin-bottom: 10px; }
+.btn-correct { background: #e8f5e9; color: #2e7d32; font-size: 18px; }
+.btn-wrong   { background: #ffebee; color: #c62828; font-size: 18px; }
+
+.nav-row { display: flex; gap: 10px; margin-top: 4px; }
+.btn-nav {
+  flex: 1; padding: 13px; border-radius: 14px;
+  font-size: 15px; font-weight: 600;
+  border: none; cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+.btn-nav:active { opacity: 0.8; }
+.btn-prev { background: #f5f5f5; color: #aaa; }
+.btn-prev:disabled { opacity: 0.3; cursor: default; }
+.btn-skip { background: #f5f5f5; color: #aaa; }
+
+/* Result */
+.result-wrap { text-align: center; padding: 40px 20px; }
+.result-emoji { font-size: 72px; margin-bottom: 16px; }
+.result-score { font-size: 36px; font-weight: 800; color: #222; margin-bottom: 8px; }
+.result-msg   { font-size: 17px; color: #666; margin-bottom: 36px; line-height: 1.5; }
+.btn-full {
+  display: block; width: 100%; padding: 17px; border-radius: 14px;
+  font-size: 17px; font-weight: 700; border: none; cursor: pointer;
+  margin-bottom: 12px; transition: transform 0.1s;
+}
+.btn-full:active { transform: scale(0.98); }
+.btn-retry  { background: #43a047; color: white; }
+.btn-home-r { background: #f0f0f0; color: #444; }
+
+/* Wrong words list */
+.wrong-list { text-align: left; margin: 0 0 20px; }
+.wrong-list h3 { font-size: 14px; color: #c62828; margin-bottom: 10px; font-weight: 700; }
+.wrong-item {
+  background: white; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px;
+  font-size: 15px; display: flex; align-items: center; gap: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.wrong-hanzi { font-size: 20px; font-weight: 700; color: #222; }
+.wrong-info  { font-size: 13px; color: #888; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- ══ HOME ══ -->
+  <div id="screen-home" class="screen active">
+    <div class="home-header">
+      <span class="emoji">📖</span>
+      <h1>중국어 단어장</h1>
+      <p>우지언</p>
+    </div>
+    <button class="source-btn btn-hakwon" onclick="showSessions('학원')">
+      <span class="icon">🏫</span>
+      <span class="label">학원</span>
+      <span class="count" id="hakwon-count"></span>
+    </button>
+    <button class="source-btn btn-hakgyo" onclick="showSessions('학교')">
+      <span class="icon">📚</span>
+      <span class="label">학교</span>
+      <span class="count" id="hakgyo-count"></span>
+    </button>
+  </div>
+
+  <!-- ══ SESSION LIST ══ -->
+  <div id="screen-sessions" class="screen">
+    <div class="top-bar">
+      <button class="back-btn" onclick="goHome()">←</button>
+      <h2 id="sessions-title"></h2>
+    </div>
+    <div id="session-list"></div>
+  </div>
+
+  <!-- ══ FLASHCARD ══ -->
+  <div id="screen-flashcard" class="screen">
+    <div class="top-bar">
+      <button class="back-btn" onclick="goSessions()">←</button>
+      <h2 id="fc-lesson-title"></h2>
+    </div>
+
+    <div class="progress-row">
+      <div class="progress-bar-wrap">
+        <div id="progress-bar" class="progress-bar" style="width:0%"></div>
+      </div>
+      <span id="progress-text" class="progress-text"></span>
+    </div>
+
+    <p id="group-name" class="group-name"></p>
+
+    <!-- Card: question always visible, hanzi hidden until tapped -->
+    <div class="card">
+      <div class="card-question">
+        <div id="korean-display" class="question-korean"></div>
+        <div id="chinese-def-display" class="question-chinese-def"></div>
+      </div>
+      <hr class="card-sep">
+
+      <!-- Hanzi cover — tap to reveal -->
+      <div id="hanzi-cover" class="hanzi-cover" onclick="revealHanzi()">
+        <div class="cover-icon">✍️</div>
+        <div class="cover-text">탭해서 한자 확인하기</div>
+      </div>
+
+      <!-- Hanzi + pinyin — shown after tap -->
+      <div id="hanzi-revealed" class="hanzi-revealed">
+        <div id="hanzi-display" class="hanzi"></div>
+        <div id="pinyin-display" class="pinyin"></div>
+      </div>
+    </div>
+
+    <!-- Stroke animation — shown after hanzi revealed -->
+    <div id="stroke-panel" class="stroke-panel">
+      <div class="panel-label stroke-label">✍️ 획순 애니메이션</div>
+      <div id="stroke-writers" class="hint-writers"></div>
+    </div>
+
+    <!-- Pinyin hint panel -->
+    <div id="hint-panel" class="hint-panel">
+      <div class="panel-label hint-label">💡 발음 힌트 (Pinyin)</div>
+      <div id="hint-pinyin" class="hint-pinyin"></div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn-sound" onclick="playSound()">🔊 발음 듣기</button>
+      <button class="btn btn-hint"  onclick="toggleHint()">💡 힌트</button>
+    </div>
+
+    <div id="answer-btns" class="answer-btns">
+      <button class="btn btn-correct" onclick="markAnswer(true)">✓ 맞았어요</button>
+      <button class="btn btn-wrong"   onclick="markAnswer(false)">✗ 틀렸어요</button>
+    </div>
+
+    <div class="nav-row">
+      <button id="btn-prev" class="btn-nav btn-prev" onclick="goBack()">← 이전 문제</button>
+      <button id="btn-skip" class="btn-nav btn-skip" onclick="skipCard()">다음 문제 →</button>
+    </div>
+  </div>
+
+  <!-- ══ RESULT ══ -->
+  <div id="screen-result" class="screen">
+    <div class="result-wrap">
+      <div id="result-emoji" class="result-emoji"></div>
+      <div id="result-score" class="result-score"></div>
+      <div id="result-msg"   class="result-msg"></div>
+      <div id="wrong-list"   class="wrong-list"></div>
+      <button class="btn-full btn-retry"  onclick="restartSession()">다시 풀기 🔄</button>
+      <button class="btn-full btn-home-r" onclick="goHome()">홈으로 🏠</button>
+    </div>
+  </div>
+
+</div><!-- /app -->
+
+<script src="data.js"></script>
+<script>
+// ══════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════
+let currentSource  = '';
+let currentSession = null;
+let currentWords   = [];
+let currentIndex   = 0;
+let results        = []; // true=맞음, false=틀림, undefined=미답
+let hintVisible    = false;
+let hanziVisible   = false;
+let strokeWriters  = [];
+
+// ══════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════
+function init() {
+  updateHomeCounts();
+  if ('speechSynthesis' in window) {
+    speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+    speechSynthesis.getVoices();
+  }
+}
+
+function updateHomeCounts() {
+  const data = window.VOCAB_DATA || [];
+  const count = (src) => {
+    const sessions = data.filter(s => s.source === src);
+    const words = sessions.reduce((n, s) => n + s.groups.reduce((m, g) => m + g.words.length, 0), 0);
+    return sessions.length ? `${sessions.length}회차 · ${words}단어` : '단어 없음';
+  };
+  document.getElementById('hakwon-count').textContent = count('학원');
+  document.getElementById('hakgyo-count').textContent = count('학교');
+}
+
+// ══════════════════════════════════════════
+//  NAVIGATION
+// ══════════════════════════════════════════
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function goHome()     { updateHomeCounts(); showScreen('home'); }
+function goSessions() { showSessions(currentSource); }
+
+function showSessions(source) {
+  currentSource = source;
+  document.getElementById('sessions-title').textContent =
+    source === '학원' ? '🏫 학원 수업' : '📚 학교 수업';
+
+  const sessions = (window.VOCAB_DATA || []).filter(s => s.source === source);
+  const list = document.getElementById('session-list');
+
+  if (sessions.length === 0) {
+    list.innerHTML = '<div class="no-sessions">아직 단어가 없어요 📭<br><br>사진을 올려주시면 추가해 드릴게요!</div>';
+  } else {
+    list.innerHTML = sessions.map(s => {
+      const wordCount = s.groups.reduce((n, g) => n + g.words.length, 0);
+      const groupInfo = s.groups.map(g => g.name.split('·')[0].trim()).join(' / ');
+      return `
+        <div class="session-card" onclick="startSession('${s.id}')">
+          <span class="session-icon">📝</span>
+          <div class="session-info">
+            <div class="session-date">${s.date} · ${groupInfo}</div>
+            <div class="session-name">${s.lesson}</div>
+            <div class="session-count">단어 ${wordCount}개</div>
+          </div>
+          <span class="session-arrow">›</span>
+        </div>`;
+    }).join('');
+  }
+  showScreen('sessions');
+}
+
+// ══════════════════════════════════════════
+//  FLASHCARD
+// ══════════════════════════════════════════
+function startSession(sessionId) {
+  currentSession = (window.VOCAB_DATA || []).find(s => s.id === sessionId);
+  if (!currentSession) return;
+
+  currentWords = shuffle(currentSession.groups.flatMap(g => g.words));
+  currentIndex = 0;
+  results      = [];
+
+  document.getElementById('fc-lesson-title').textContent = currentSession.lesson;
+  showScreen('flashcard');
+  renderCard();
+}
+
+function renderCard() {
+  if (currentIndex >= currentWords.length) { showResult(); return; }
+
+  const word = currentWords[currentIndex];
+
+  // Find group name
+  let groupName = '';
+  for (const g of currentSession.groups) {
+    if (g.words.includes(word)) { groupName = g.name; break; }
+  }
+
+  // Reset state
+  hintVisible  = false;
+  hanziVisible = false;
+  stopStrokeWriters();
+
+  // Fill in content
+  document.getElementById('korean-display').textContent     = word.korean;
+  document.getElementById('chinese-def-display').textContent = word.chinese_def;
+  document.getElementById('hanzi-display').textContent      = word.hanzi;
+  document.getElementById('pinyin-display').textContent     = word.pinyin;
+  document.getElementById('group-name').textContent         = groupName;
+
+  // Show cover, hide revealed
+  document.getElementById('hanzi-cover').style.display    = 'block';
+  document.getElementById('hanzi-revealed').classList.remove('visible');
+  document.getElementById('hint-panel').classList.remove('visible');
+  document.getElementById('stroke-panel').classList.remove('visible');
+  document.getElementById('stroke-writers').innerHTML     = '';
+  document.getElementById('answer-btns').classList.remove('visible');
+  document.getElementById('btn-prev').disabled = (currentIndex === 0);
+  document.getElementById('btn-skip').disabled = false;
+
+  // Progress
+  const pct = (currentIndex / currentWords.length) * 100;
+  document.getElementById('progress-bar').style.width = pct + '%';
+  document.getElementById('progress-text').textContent = `${currentIndex + 1} / ${currentWords.length}`;
+}
+
+// ── Reveal hanzi on tap ──
+function revealHanzi() {
+  if (hanziVisible) return;
+  hanziVisible = true;
+
+  document.getElementById('hanzi-cover').style.display = 'none';
+  document.getElementById('hanzi-revealed').classList.add('visible');
+  document.getElementById('answer-btns').classList.add('visible');
+  document.getElementById('btn-skip').disabled = true;
+
+  // Auto-play stroke animation
+  showStrokeAnimation();
+}
+
+// ── Stroke animation ──
+function showStrokeAnimation() {
+  const word = currentWords[currentIndex];
+  const panel = document.getElementById('stroke-panel');
+  const writersDiv = document.getElementById('stroke-writers');
+  writersDiv.innerHTML = '';
+  strokeWriters = [];
+
+  if (typeof HanziWriter === 'undefined') return;
+
+  word.hanzi.split('').forEach((char, i) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'hint-writer-wrap';
+
+    const svg = document.createElement('div');
+    svg.id = 'sw-' + i;
+    wrap.appendChild(svg);
+
+    const label = document.createElement('div');
+    label.className = 'hint-writer-char';
+    label.textContent = char;
+    wrap.appendChild(label);
+
+    writersDiv.appendChild(wrap);
+
+    try {
+      const writer = HanziWriter.create('sw-' + i, char, {
+        width: 90, height: 90, padding: 6,
+        showOutline: true,
+        strokeColor: '#e65100',
+        outlineColor: '#ffe0b2',
+      });
+      writer.animateCharacter();
+      strokeWriters.push(writer);
+    } catch(e) {
+      svg.textContent = char;
+      svg.style.cssText = 'font-size:50px;width:90px;height:90px;display:flex;align-items:center;justify-content:center;';
+    }
+  });
+
+  if (writersDiv.children.length > 0) panel.classList.add('visible');
+}
+
+function stopStrokeWriters() {
+  strokeWriters.forEach(w => { try { w.cancelAnimation(); } catch(e) {} });
+  strokeWriters = [];
+}
+
+// ── Pinyin hint ──
+function toggleHint() {
+  hintVisible = !hintVisible;
+  const panel = document.getElementById('hint-panel');
+  if (hintVisible) {
+    document.getElementById('hint-pinyin').textContent = currentWords[currentIndex].pinyin;
+    panel.classList.add('visible');
+  } else {
+    panel.classList.remove('visible');
+  }
+}
+
+// ── Sound ──
+function playSound() {
+  if (!('speechSynthesis' in window)) return;
+  speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(currentWords[currentIndex].hanzi);
+  utter.lang = 'zh-SG';
+  utter.rate = 0.85;
+  const voices = speechSynthesis.getVoices();
+  const sgVoice = voices.find(v => v.lang === 'zh-SG');
+  const cnVoice = voices.find(v => v.lang.startsWith('zh'));
+  if (sgVoice) utter.voice = sgVoice;
+  else if (cnVoice) utter.voice = cnVoice;
+  speechSynthesis.speak(utter);
+}
+
+// ── Mark answer ──
+function markAnswer(correct) {
+  results[currentIndex] = correct;
+  currentIndex++;
+  renderCard();
+}
+
+// ── Skip (next without answering) ──
+function skipCard() {
+  if (results[currentIndex] === undefined) results[currentIndex] = false;
+  currentIndex++;
+  renderCard();
+}
+
+// ── Go back ──
+function goBack() {
+  if (currentIndex <= 0) return;
+  currentIndex--;
+  renderCard();
+}
+
+// ══════════════════════════════════════════
+//  RESULT
+// ══════════════════════════════════════════
+function showResult() {
+  const total        = currentWords.length;
+  const correctCount = results.filter(r => r === true).length;
+  const wrongWords   = currentWords.filter((_, i) => results[i] !== true);
+  const pct          = Math.round((correctCount / total) * 100);
+
+  let emoji, msg;
+  if (pct === 100)     { emoji = '🌟'; msg = '완벽해요! 모두 다 맞았어요!'; }
+  else if (pct >= 80)  { emoji = '🎉'; msg = '잘했어요! 거의 다 맞았어요!'; }
+  else if (pct >= 60)  { emoji = '👍'; msg = '좋아요! 조금만 더 연습해요!'; }
+  else if (pct >= 40)  { emoji = '💪'; msg = '계속 연습하면 더 잘할 수 있어요!'; }
+  else                  { emoji = '📖'; msg = '틀린 단어를 다시 복습해봐요!'; }
+
+  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-score').textContent = `${correctCount} / ${total}`;
+  document.getElementById('result-msg').textContent   = msg;
+
+  const wrongDiv = document.getElementById('wrong-list');
+  wrongDiv.innerHTML = wrongWords.length > 0
+    ? `<h3>❌ 틀린 단어 (${wrongWords.length}개)</h3>` +
+      wrongWords.map(w => `
+        <div class="wrong-item">
+          <span class="wrong-hanzi">${w.hanzi}</span>
+          <span class="wrong-info">${w.pinyin} · ${w.korean}</span>
+        </div>`).join('')
+    : '';
+
+  showScreen('result');
+}
+
+function restartSession() {
+  currentWords = shuffle(currentSession.groups.flatMap(g => g.words));
+  currentIndex = 0; results = [];
+  showScreen('flashcard');
+  renderCard();
+}
+
+// ══════════════════════════════════════════
+//  UTILS
+// ══════════════════════════════════════════
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+init();
+</script>
+</body>
+</html>
