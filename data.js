@@ -60,5 +60,161 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260321_Unknown",
+    "source": "학원",
+    "date": "2026-03-21",
+    "lesson": "Unknown",
+    "groups": [
+      {
+        "name": "认读词语 · 읽기 단어",
+        "words": [
+          {
+            "hanzi": "部分",
+            "pinyin": "bù fèn",
+            "korean": "부분",
+            "chinese_def": "整体中的一部分"
+          },
+          {
+            "hanzi": "听力",
+            "pinyin": "tīng lì",
+            "korean": "청력, 듣기 능력",
+            "chinese_def": "听的能力"
+          },
+          {
+            "hanzi": "结",
+            "pinyin": "jié",
+            "korean": "맺다, 묶다",
+            "chinese_def": "连结、系住"
+          },
+          {
+            "hanzi": "传",
+            "pinyin": "chuán",
+            "korean": "전달하다",
+            "chinese_def": "传递、传播"
+          },
+          {
+            "hanzi": "烦恼",
+            "pinyin": "fán nǎo",
+            "korean": "번뇌, 고민",
+            "chinese_def": "心情不好，苦恼"
+          },
+          {
+            "hanzi": "正气",
+            "pinyin": "zhèng qì",
+            "korean": "정기, 올바른 기운",
+            "chinese_def": "正直的气节"
+          },
+          {
+            "hanzi": "日台",
+            "pinyin": "rì tái",
+            "korean": "일대",
+            "chinese_def": "某一地区或平台"
+          },
+          {
+            "hanzi": "猛烈",
+            "pinyin": "měng liè",
+            "korean": "맹렬하다",
+            "chinese_def": "强烈、激烈"
+          },
+          {
+            "hanzi": "一",
+            "pinyin": "yī",
+            "korean": "일, 하나",
+            "chinese_def": "数字一"
+          },
+          {
+            "hanzi": "类",
+            "pinyin": "lèi",
+            "korean": "종류, 유형",
+            "chinese_def": "种类"
+          },
+          {
+            "hanzi": "寒",
+            "pinyin": "hán",
+            "korean": "춥다, 한랭하다",
+            "chinese_def": "冷"
+          }
+        ]
+      },
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "年长",
+            "pinyin": "nián zhǎng",
+            "korean": "연장자",
+            "chinese_def": "年纪较大的人"
+          },
+          {
+            "hanzi": "比较",
+            "pinyin": "bǐ jiào",
+            "korean": "비교하다",
+            "chinese_def": "对比、相比"
+          },
+          {
+            "hanzi": "赛",
+            "pinyin": "sài",
+            "korean": "시합, 경쟁",
+            "chinese_def": "竞赛、比赛"
+          },
+          {
+            "hanzi": "晒太阳",
+            "pinyin": "shài tài yáng",
+            "korean": "햇볕을 쬐다",
+            "chinese_def": "在太阳下晒"
+          },
+          {
+            "hanzi": "外写",
+            "pinyin": "wài xiě",
+            "korean": "외부에 쓰다",
+            "chinese_def": "在外面书写"
+          },
+          {
+            "hanzi": "群体学生",
+            "pinyin": "qún tǐ xué shēng",
+            "korean": "단체 학생",
+            "chinese_def": "一群学生"
+          },
+          {
+            "hanzi": "许",
+            "pinyin": "xǔ",
+            "korean": "허락하다, 많다",
+            "chinese_def": "允许；许多"
+          },
+          {
+            "hanzi": "合卡",
+            "pinyin": "hé kǎ",
+            "korean": "카드 합치기",
+            "chinese_def": "合并卡片"
+          },
+          {
+            "hanzi": "小动",
+            "pinyin": "xiǎo dòng",
+            "korean": "작은 움직임",
+            "chinese_def": "小的动作"
+          },
+          {
+            "hanzi": "土语",
+            "pinyin": "tǔ yǔ",
+            "korean": "방언, 토속어",
+            "chinese_def": "地方方言"
+          },
+          {
+            "hanzi": "吊",
+            "pinyin": "diào",
+            "korean": "매달다",
+            "chinese_def": "悬挂"
+          },
+          {
+            "hanzi": "挂灯笼",
+            "pinyin": "guà dēng lóng",
+            "korean": "등롱을 달다",
+            "chinese_def": "悬挂灯笼"
+          }
+        ]
+      }
+    ]
   }
 ];
