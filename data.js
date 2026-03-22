@@ -150,7 +150,7 @@ window.VOCAB_DATA = [
         ]
       }
     ]
-  },,
+  },
   {
     "id": "hakwon_20260322_L8",
     "source": "학원",
