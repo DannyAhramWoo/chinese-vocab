@@ -126,6 +126,45 @@ def extract_words_from_image(client, image_path):
 
     return response.content[0].text
 
+# ── JSON 안전 파싱 (AI 응답의 제어문자 자동 수정) ──
+def safe_parse_json(raw):
+    raw = re.sub(r'^```json\s*', '', raw.strip())
+    raw = re.sub(r'\s*```$', '', raw.strip())
+    raw = raw.strip()
+
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        pass
+
+    # 문자열 안의 이스케이프되지 않은 개행/탭 문자 수정
+    result = []
+    in_string = False
+    i = 0
+    while i < len(raw):
+        c = raw[i]
+        if c == '\\' and in_string:
+            result.append(c)
+            i += 1
+            if i < len(raw):
+                result.append(raw[i])
+            i += 1
+            continue
+        if c == '"':
+            in_string = not in_string
+            result.append(c)
+            i += 1
+            continue
+        if in_string and c in '\n\r\t':
+            escape_map = {'\n': '\\n', '\r': '\\r', '\t': '\\t'}
+            result.append(escape_map[c])
+            i += 1
+            continue
+        result.append(c)
+        i += 1
+
+    return json.loads(''.join(result))
+
 # ── data.js에 새 세션 추가 ──
 def update_data_js(new_session, data_js_path):
     content = Path(data_js_path).read_text(encoding='utf-8')
@@ -215,9 +254,7 @@ def main():
         # Claude API 호출
         try:
             raw = extract_words_from_image(client, processed_path)
-            raw = re.sub(r'^```json\s*', '', raw.strip())
-            raw = re.sub(r'\s*```$', '', raw.strip())
-            extracted = json.loads(raw)
+            extracted = safe_parse_json(raw)
         except Exception as e:
             print(f"  → ERROR: 단어 추출 실패 ({e})")
             mark_processed(photo_path_str)  # 실패해도 재시도 방지
