@@ -48,10 +48,10 @@ def extract_words_from_image(client, image_path):
 다음 JSON 형식으로만 응답해주세요 (다른 텍스트 없이):
 
 {
-  "lesson": "레슨명 (예: T1L09-1, 없으면 Unknown)",
+  "lesson": "레슨명 (예: T1L09-1, 听写五, 없으면 Unknown)",
   "groups": [
     {
-      "name": "그룹명 (习写词语 · 쓰기 단어 / 认读词语 · 읽기 단어 / 词语解释 · 단어 해설 중 해당하는 것)",
+      "name": "그룹명 (习写词语 · 쓰기 단어 / 认读词语 · 읽기 단어 / 词语解释 · 단어 해설 / 听写词语 · 받아쓰기 단어 중 해당하는 것)",
       "words": [
         {
           "hanzi": "한자",
@@ -69,7 +69,14 @@ def extract_words_from_image(client, image_path):
 - pinyin은 정확한 성조 포함 (예: nǐ hǎo)
 - 한국어 뜻은 핵심만 간결하게
 - 그룹이 여러 개면 groups 배열에 모두 포함
-- JSON만 반환, 설명 없이"""
+- JSON만 반환, 설명 없이
+
+⚠️ 听写(받아쓰기 시험) 형식 처리 규칙:
+- 사진에 "听写" 제목이 있거나, 문장 속 단어에 밑줄이 그어져 있으면 听写 시험입니다
+- 听写 시험인 경우: 밑줄 친 단어들만 추출하세요
+- 문장 전체, 밑줄 없는 단어, 문맥 단어는 추출하지 마세요
+- 예: "我们去_____吃美食。" → 밑줄 친 단어(美食 등)만 추출
+- group name은 "听写词语 · 받아쓰기 단어"로 설정"""
 
     response = client.messages.create(
         model="claude-sonnet-4-6",
@@ -192,7 +199,8 @@ def main():
             continue
 
         lesson = extracted.get('lesson', photo.stem)
-        session_id = f"{'hakwon' if source == '학원' else 'hakgyo'}_{date_str.replace('-', '')}_{re.sub(r'[^a-zA-Z0-9]', '', lesson)}"
+        lesson_slug = re.sub(r'[^a-zA-Z0-9]', '', lesson) or photo.stem
+        session_id = f"{'hakwon' if source == '학원' else 'hakgyo'}_{date_str.replace('-', '')}_{lesson_slug}"
 
         # 중복 확인
         if session_exists(session_id, data_js_path):
