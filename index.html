@@ -199,16 +199,57 @@ body {
 .btn-retry  { background: #43a047; color: white; }
 .btn-home-r { background: #f0f0f0; color: #444; }
 
-/* Wrong words list */
-.wrong-list { text-align: left; margin: 0 0 20px; }
-.wrong-list h3 { font-size: 14px; color: #c62828; margin-bottom: 10px; font-weight: 700; }
-.wrong-item {
-  background: white; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px;
-  font-size: 15px; display: flex; align-items: center; gap: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+/* Status dots */
+.status-dots-wrap {
+  overflow-x: auto; padding: 4px 0 10px;
+  scrollbar-width: none;
 }
-.wrong-hanzi { font-size: 20px; font-weight: 700; color: #222; }
-.wrong-info  { font-size: 13px; color: #888; }
+.status-dots-wrap::-webkit-scrollbar { display: none; }
+.status-dots {
+  display: flex; gap: 6px; width: max-content; min-width: 100%;
+  justify-content: center; flex-wrap: wrap;
+}
+.status-dot {
+  width: 22px; height: 22px; border-radius: 50%;
+  font-size: 11px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.15s, background 0.2s;
+  border: 2px solid transparent;
+}
+.status-dot.pending  { background: #e0e0e0; color: #aaa; }
+.status-dot.correct  { background: #c8e6c9; color: #2e7d32; }
+.status-dot.wrong    { background: #ffcdd2; color: #c62828; }
+.status-dot.current  { border-color: #1976d2; transform: scale(1.2); }
+
+/* Result table */
+.result-table-wrap { text-align: left; margin: 0 0 20px; }
+.result-table-wrap h3 {
+  font-size: 14px; font-weight: 700; color: #555;
+  margin-bottom: 12px; text-align: center;
+}
+.result-table {
+  width: 100%; border-collapse: collapse;
+  background: white; border-radius: 14px; overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07); font-size: 14px;
+}
+.result-table th {
+  background: #f5f5f5; padding: 10px 8px;
+  font-size: 12px; color: #888; font-weight: 600;
+  text-align: center; border-bottom: 1px solid #eee;
+}
+.result-table td {
+  padding: 10px 8px; border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+.result-table tr:last-child td { border-bottom: none; }
+.rt-num    { text-align: center; color: #bbb; font-size: 12px; width: 28px; }
+.rt-hanzi  { font-size: 20px; font-weight: 700; color: #222; text-align: center; width: 60px; }
+.rt-info   { }
+.rt-pinyin { font-size: 12px; color: #aaa; }
+.rt-korean { font-size: 14px; color: #444; font-weight: 600; }
+.rt-status { text-align: center; font-size: 18px; width: 36px; }
+.rt-correct { background: #f1f8f1; }
+.rt-wrong   { background: #fff5f5; }
 </style>
 </head>
 <body>
@@ -254,6 +295,10 @@ body {
         <div id="progress-bar" class="progress-bar" style="width:0%"></div>
       </div>
       <span id="progress-text" class="progress-text"></span>
+    </div>
+
+    <div class="status-dots-wrap">
+      <div id="status-dots" class="status-dots"></div>
     </div>
 
     <p id="group-name" class="group-name"></p>
@@ -313,7 +358,7 @@ body {
       <div id="result-emoji" class="result-emoji"></div>
       <div id="result-score" class="result-score"></div>
       <div id="result-msg"   class="result-msg"></div>
-      <div id="wrong-list"   class="wrong-list"></div>
+      <div id="result-table-wrap" class="result-table-wrap"></div>
       <button class="btn-full btn-retry"  onclick="restartSession()">다시 풀기 🔄</button>
       <button class="btn-full btn-home-r" onclick="goHome()">홈으로 🏠</button>
     </div>
@@ -410,6 +455,7 @@ function startSession(sessionId) {
   results      = [];
 
   document.getElementById('fc-lesson-title').textContent = currentSession.lesson;
+  initStatusDots();
   showScreen('flashcard');
   renderCard();
 }
@@ -446,6 +492,7 @@ function renderCard() {
   document.getElementById('answer-btns').classList.remove('visible');
   document.getElementById('btn-prev').disabled = (currentIndex === 0);
   document.getElementById('btn-skip').disabled = false;
+  updateStatusDots();
 
   // Progress
   const pct = (currentIndex / currentWords.length) * 100;
@@ -556,6 +603,26 @@ function skipCard() {
   renderCard();
 }
 
+// ── Status dots ──
+function initStatusDots() {
+  const wrap = document.getElementById('status-dots');
+  wrap.innerHTML = currentWords.map((_, i) =>
+    `<div id="dot-${i}" class="status-dot pending">${i + 1}</div>`
+  ).join('');
+}
+
+function updateStatusDots() {
+  currentWords.forEach((_, i) => {
+    const dot = document.getElementById('dot-' + i);
+    if (!dot) return;
+    dot.className = 'status-dot';
+    if (i === currentIndex)       dot.classList.add('current', results[i] === true ? 'correct' : results[i] === false ? 'wrong' : 'pending');
+    else if (results[i] === true)  dot.classList.add('correct');
+    else if (results[i] === false) dot.classList.add('wrong');
+    else                           dot.classList.add('pending');
+  });
+}
+
 // ── Go back ──
 function goBack() {
   if (currentIndex <= 0) return;
@@ -583,15 +650,30 @@ function showResult() {
   document.getElementById('result-score').textContent = `${correctCount} / ${total}`;
   document.getElementById('result-msg').textContent   = msg;
 
-  const wrongDiv = document.getElementById('wrong-list');
-  wrongDiv.innerHTML = wrongWords.length > 0
-    ? `<h3>❌ 틀린 단어 (${wrongWords.length}개)</h3>` +
-      wrongWords.map(w => `
-        <div class="wrong-item">
-          <span class="wrong-hanzi">${w.hanzi}</span>
-          <span class="wrong-info">${w.pinyin} · ${w.korean}</span>
-        </div>`).join('')
-    : '';
+  const tableWrap = document.getElementById('result-table-wrap');
+  tableWrap.innerHTML = `
+    <h3>📋 전체 단어 결과 (${correctCount}✓ ${wrongWords.length}✗)</h3>
+    <table class="result-table">
+      <thead>
+        <tr>
+          <th>#</th><th>한자</th><th>뜻</th><th>결과</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${currentWords.map((w, i) => {
+          const ok = results[i] === true;
+          return `<tr class="${ok ? 'rt-correct' : 'rt-wrong'}">
+            <td class="rt-num">${i + 1}</td>
+            <td class="rt-hanzi">${w.hanzi}</td>
+            <td class="rt-info">
+              <div class="rt-pinyin">${w.pinyin}</div>
+              <div class="rt-korean">${w.korean}</div>
+            </td>
+            <td class="rt-status">${ok ? '✅' : '❌'}</td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>`;
 
   showScreen('result');
 }
@@ -599,6 +681,7 @@ function showResult() {
 function restartSession() {
   currentWords = shuffle(currentSession.groups.flatMap(g => g.words));
   currentIndex = 0; results = [];
+  initStatusDots();
   showScreen('flashcard');
   renderCard();
 }
