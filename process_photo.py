@@ -2,6 +2,7 @@
 우지언 중국어 단어 자동 추출기
 - photos/학원/ 또는 photos/학교/ 에 올라온 새 사진을 Claude AI로 분석
 - data.js에 자동으로 단어 세션 추가
+- photos/processed.txt 로 처리된 사진 추적 (중복 방지)
 """
 
 import anthropic
@@ -12,6 +13,21 @@ import re
 import sys
 from pathlib import Path
 from datetime import datetime
+
+PROCESSED_FILE = Path('photos/processed.txt')
+
+# ── 처리된 사진 목록 로드 ──
+def load_processed():
+    if PROCESSED_FILE.exists():
+        lines = PROCESSED_FILE.read_text(encoding='utf-8').splitlines()
+        return set(line.strip() for line in lines if line.strip())
+    return set()
+
+# ── 처리 완료된 사진 기록 ──
+def mark_processed(photo_path_str):
+    processed = load_processed()
+    processed.add(photo_path_str)
+    PROCESSED_FILE.write_text('\n'.join(sorted(processed)) + '\n', encoding='utf-8')
 
 # ── 이미지 → base64 변환 ──
 def encode_image(image_path):
@@ -127,11 +143,6 @@ def update_data_js(new_session, data_js_path):
     Path(data_js_path).write_text(new_content, encoding='utf-8')
     return True
 
-# ── 중복 세션 확인 ──
-def session_exists(session_id, data_js_path):
-    content = Path(data_js_path).read_text(encoding='utf-8')
-    return f'"{session_id}"' in content
-
 # ── 메인 ──
 def main():
     api_key = os.environ.get('ANTHROPIC_API_KEY')
@@ -141,32 +152,39 @@ def main():
 
     image_extensions = {'.jpg', '.jpeg', '.png', '.heic', '.heif', '.webp'}
 
+    # 처리 완료된 사진 목록 로드
+    processed = load_processed()
+    if processed:
+        print(f"이미 처리된 사진 {len(processed)}개 건너뜀")
+
     # 변경된 파일 목록 가져오기
     changed_files_env = os.environ.get('CHANGED_FILES', '')
     changed_files = [f.strip() for f in changed_files_env.split('\n') if f.strip()]
 
     if changed_files:
-        # 자동 실행: push로 변경된 사진만 처리
+        # 자동 실행: push로 추가된 사진 중 미처리된 것만
         photo_files = [
             f for f in changed_files
             if f.startswith('photos/') and Path(f).suffix.lower() in image_extensions
             and Path(f).exists()
+            and f not in processed
         ]
     else:
-        # 수동 실행(workflow_dispatch): photos/ 폴더 전체 스캔
-        print("수동 실행: photos/ 폴더 전체를 스캔합니다")
+        # 수동 실행(workflow_dispatch): 미처리 사진만 스캔
+        print("수동 실행: 미처리 사진을 스캔합니다")
         photo_files = [
             str(p) for p in Path('photos').rglob('*')
             if p.suffix.lower() in image_extensions
             and p.is_file()
             and not p.name.startswith('.')
+            and str(p) not in processed
         ]
 
     if not photo_files:
-        print("처리할 사진이 없습니다")
+        print("처리할 새 사진이 없습니다")
         return
 
-    print(f"처리할 사진 {len(photo_files)}개 발견")
+    print(f"처리할 새 사진 {len(photo_files)}개 발견")
 
     client = anthropic.Anthropic(api_key=api_key)
     data_js_path = Path('data.js')
@@ -202,16 +220,12 @@ def main():
             extracted = json.loads(raw)
         except Exception as e:
             print(f"  → ERROR: 단어 추출 실패 ({e})")
+            mark_processed(photo_path_str)  # 실패해도 재시도 방지
             continue
 
         lesson = extracted.get('lesson', photo.stem)
         lesson_slug = re.sub(r'[^a-zA-Z0-9]', '', lesson) or photo.stem
         session_id = f"{'hakwon' if source == '학원' else 'hakgyo'}_{date_str.replace('-', '')}_{lesson_slug}"
-
-        # 중복 확인
-        if session_exists(session_id, data_js_path):
-            print(f"  → 이미 존재하는 세션 건너뜀: {session_id}")
-            continue
 
         session = {
             "id": session_id,
@@ -221,11 +235,12 @@ def main():
             "groups": extracted.get("groups", [])
         }
 
-        word_count = sum(len(g.get('words', [])) for g in session['groups'])
-        print(f"  → {source} / {lesson} / {word_count}개 단어 추출 완료")
+        item_count = sum(len(g.get('words', [])) for g in session['groups'])
+        print(f"  → {source} / {lesson} / {item_count}개 항목 추출 완료")
 
         if update_data_js(session, data_js_path):
             print(f"  → data.js 업데이트 완료 ✅")
+            mark_processed(photo_path_str)  # 성공 시 처리 완료 기록
         else:
             print(f"  → data.js 업데이트 실패 ❌")
 
