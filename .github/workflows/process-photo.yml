@@ -48,6 +48,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.js
+          git add data.js photos/processed.txt
           git diff --staged --quiet || git commit -m "✨ 새 단어 자동 추가 (사진 분석)"
           git push
