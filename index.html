@@ -595,7 +595,7 @@ function playSound() {
   speechSynthesis.cancel();
   const utter = new SpeechSynthesisUtterance(currentWords[currentIndex].hanzi);
   utter.lang = 'zh-SG';
-  utter.rate = 0.85;
+  utter.rate = 0.7;
   const voices = speechSynthesis.getVoices();
   const sgVoice = voices.find(v => v.lang === 'zh-SG');
   const cnVoice = voices.find(v => v.lang.startsWith('zh'));
