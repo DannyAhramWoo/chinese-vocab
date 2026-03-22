@@ -150,5 +150,250 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260322_T1L102",
+    "source": "학원",
+    "date": "2026-03-22",
+    "lesson": "T1L10-2",
+    "groups": [
+      {
+        "name": "词语解释 · 단어 해설",
+        "words": [
+          {
+            "hanzi": "轻手轻脚",
+            "pinyin": "qīng shǒu qīng jiǎo",
+            "korean": "살살; 조용히",
+            "chinese_def": "手脚动作很轻，使没有响声。形容小心翼翼，尽量不弄出响声来。",
+            "type": "word"
+          },
+          {
+            "hanzi": "赔钱",
+            "pinyin": "péi qián",
+            "korean": "손해를 변상하다; 배상하다",
+            "chinese_def": "用钱来补偿给他人造成的损失。",
+            "type": "word"
+          },
+          {
+            "hanzi": "搬家",
+            "pinyin": "bān jiā",
+            "korean": "이사하다",
+            "chinese_def": "指举家从原来居住的地方迁移到别处去。",
+            "type": "word"
+          },
+          {
+            "hanzi": "溜走",
+            "pinyin": "liū zǒu",
+            "korean": "몰래 도망가다; 슬쩍 빠져나가다",
+            "chinese_def": "偷偷地走开。",
+            "type": "word"
+          },
+          {
+            "hanzi": "道歉",
+            "pinyin": "dào qiàn",
+            "korean": "사과하다",
+            "chinese_def": "向他人表示歉意、认错，希望得到对方的原谅。",
+            "type": "word"
+          },
+          {
+            "hanzi": "灵机一动",
+            "pinyin": "líng jī yī dòng",
+            "korean": "좋은 생각이 갑자기 떠오르다",
+            "chinese_def": "急忙中转了一下念头，多指临时想出了一个办法。",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "造句 · 예문",
+        "words": [
+          {
+            "hanzi": "我轻手轻脚地走进房间拿东西，怕吵醒爸爸。",
+            "pinyin": "Wǒ qīng shǒu qīng jiǎo de zǒu jìn fáng jiān ná dōng xi, pà chǎo xǐng bà ba.",
+            "korean": "나는 아빠를 깨울까봐 살살 방에 들어가 물건을 가져왔다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "小明打破了王叔叔的花盆，王叔叔让他赔钱。",
+            "pinyin": "Xiǎo Míng dǎ pò le Wáng shū shu de huā pén, Wáng shū shu ràng tā péi qián.",
+            "korean": "샤오밍이 왕 아저씨의 화분을 깨뜨리자, 왕 아저씨는 그에게 배상하라고 했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我们搬家后，认识了很多新朋友。",
+            "pinyin": "Wǒ men bān jiā hòu, rèn shi le hěn duō xīn péng you.",
+            "korean": "우리는 이사한 후 많은 새 친구를 사귀었다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "小偷想要偷偷溜走，但被赶来的警察抓住了。",
+            "pinyin": "Xiǎo tōu xiǎng yào tōu tōu liū zǒu, dàn bèi gǎn lái de jǐng chá zhuā zhù le.",
+            "korean": "도둑이 몰래 도망치려 했지만 달려온 경찰에게 잡혔다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "小明弄破了弟弟的故事书，立刻向他道歉。",
+            "pinyin": "Xiǎo Míng nòng pò le dì di de gù shi shū, lì kè xiàng tā dào qiàn.",
+            "korean": "샤오밍은 남동생의 동화책을 망가뜨리고 즉시 사과했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我灵机一动，想出了一个好办法。",
+            "pinyin": "Wǒ líng jī yī dòng, xiǎng chū le yī gè hǎo bàn fǎ.",
+            "korean": "나는 갑자기 좋은 생각이 떠올라 좋은 방법을 생각해냈다.",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      },
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "赔钱",
+            "pinyin": "péi qián",
+            "korean": "손해를 변상하다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "留下便条",
+            "pinyin": "liú xià biàn tiáo",
+            "korean": "메모를 남기다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "食堂",
+            "pinyin": "shí táng",
+            "korean": "식당; 구내식당",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "眼镜",
+            "pinyin": "yǎn jìng",
+            "korean": "안경",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "生病",
+            "pinyin": "shēng bìng",
+            "korean": "병이 나다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "休息",
+            "pinyin": "xiū xi",
+            "korean": "휴식하다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "电视",
+            "pinyin": "diàn shì",
+            "korean": "텔레비전",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "轻手轻脚",
+            "pinyin": "qīng shǒu qīng jiǎo",
+            "korean": "살살; 조용히",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "搬家",
+            "pinyin": "bān jiā",
+            "korean": "이사하다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "走路",
+            "pinyin": "zǒu lù",
+            "korean": "걷다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "碰到",
+            "pinyin": "pèng dào",
+            "korean": "만나다; 부딪히다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "脱鞋",
+            "pinyin": "tuō xié",
+            "korean": "신발을 벗다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "灵机一动",
+            "pinyin": "líng jī yī dòng",
+            "korean": "좋은 생각이 갑자기 떠오르다",
+            "chinese_def": "",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "认读词语 · 읽기 단어",
+        "words": [
+          {
+            "hanzi": "打碎",
+            "pinyin": "dǎ suì",
+            "korean": "깨뜨리다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "花盆",
+            "pinyin": "huā pén",
+            "korean": "화분",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "道歉",
+            "pinyin": "dào qiàn",
+            "korean": "사과하다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "溜走",
+            "pinyin": "liū zǒu",
+            "korean": "몰래 도망가다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "踩",
+            "pinyin": "cǎi",
+            "korean": "밟다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "地板",
+            "pinyin": "dì bǎn",
+            "korean": "바닥; 마루",
+            "chinese_def": "",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
