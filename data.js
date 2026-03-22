@@ -86,5 +86,102 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakgyo_20260322_IMG_7935",
+    "source": "학교",
+    "date": "2026-03-22",
+    "lesson": "听写五 第五课《难忘的一天》",
+    "groups": [
+      {
+        "name": "听写词语 · 받아쓰기 단어",
+        "words": [
+          {
+            "hanzi": "傍晚",
+            "pinyin": "bàng wǎn",
+            "korean": "저녁 무렵",
+            "chinese_def": "傍晚时分，天快黑的时候"
+          },
+          {
+            "hanzi": "电脑",
+            "pinyin": "diàn nǎo",
+            "korean": "컴퓨터",
+            "chinese_def": "电子计算机"
+          },
+          {
+            "hanzi": "多彩",
+            "pinyin": "duō cǎi",
+            "korean": "다채롭다",
+            "chinese_def": "颜色多，形容丰富多样"
+          },
+          {
+            "hanzi": "几号",
+            "pinyin": "jǐ hào",
+            "korean": "며칠",
+            "chinese_def": "询问日期"
+          },
+          {
+            "hanzi": "事情",
+            "pinyin": "shì qíng",
+            "korean": "일, 사건",
+            "chinese_def": "人们生活中的各种活动或事件"
+          },
+          {
+            "hanzi": "特别",
+            "pinyin": "tè bié",
+            "korean": "특별하다",
+            "chinese_def": "与众不同，不寻常"
+          },
+          {
+            "hanzi": "美食",
+            "pinyin": "měi shí",
+            "korean": "맛있는 음식",
+            "chinese_def": "美味的食物"
+          },
+          {
+            "hanzi": "准备",
+            "pinyin": "zhǔn bèi",
+            "korean": "준비하다",
+            "chinese_def": "事先安排好或做好"
+          },
+          {
+            "hanzi": "或者",
+            "pinyin": "huò zhě",
+            "korean": "또는, 혹은",
+            "chinese_def": "表示选择关系"
+          },
+          {
+            "hanzi": "风筝",
+            "pinyin": "fēng zhēng",
+            "korean": "연",
+            "chinese_def": "一种用线牵引放飞的玩具"
+          },
+          {
+            "hanzi": "附近",
+            "pinyin": "fù jìn",
+            "korean": "근처, 부근",
+            "chinese_def": "距离不远的地方"
+          },
+          {
+            "hanzi": "付了钱",
+            "pinyin": "fù le qián",
+            "korean": "돈을 내다",
+            "chinese_def": "支付金钱"
+          },
+          {
+            "hanzi": "杯子",
+            "pinyin": "bēi zi",
+            "korean": "컵",
+            "chinese_def": "喝水用的容器"
+          },
+          {
+            "hanzi": "举",
+            "pinyin": "jǔ",
+            "korean": "들어 올리다",
+            "chinese_def": "向上抬起"
+          }
+        ]
+      }
+    ]
   }
 ];
