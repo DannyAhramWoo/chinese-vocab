@@ -221,7 +221,7 @@ window.VOCAB_DATA = [
     "id": "hakgyo_20260322_Unknown",
     "source": "학교",
     "date": "2026-03-22",
-    "lesson": "Unknown",
+    "lesson": "22 March",
     "groups": [
       {
         "name": "习写词语 · 쓰기 단어",
