@@ -120,11 +120,15 @@ def extract_words_from_image(client, image_path):
                         "text": prompt
                     }
                 ],
+            },
+            {
+                "role": "assistant",
+                "content": "{"  # JSON 시작 강제 — 설명 텍스트 없이 바로 JSON 출력
             }
         ],
     )
 
-    return response.content[0].text
+    return "{" + response.content[0].text  # 프리필 "{" 포함
 
 # ── JSON 안전 파싱 (AI 응답의 제어문자 자동 수정) ──
 def safe_parse_json(raw):
@@ -163,7 +167,14 @@ def safe_parse_json(raw):
         result.append(c)
         i += 1
 
-    return json.loads(''.join(result))
+    fixed = ''.join(result)
+    try:
+        return json.loads(fixed)
+    except json.JSONDecodeError as e:
+        pos = e.pos
+        snippet = repr(fixed[max(0, pos-80):pos+80])
+        print(f"  → 파싱 실패 상세: char {pos} 주변: {snippet}")
+        raise
 
 # ── data.js에 새 세션 추가 ──
 def update_data_js(new_session, data_js_path):
@@ -257,7 +268,6 @@ def main():
             extracted = safe_parse_json(raw)
         except Exception as e:
             print(f"  → ERROR: 단어 추출 실패 ({e})")
-            mark_processed(photo_path_str)  # 실패해도 재시도 방지
             continue
 
         lesson = extracted.get('lesson', photo.stem)
