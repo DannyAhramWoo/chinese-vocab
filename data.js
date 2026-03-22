@@ -216,5 +216,78 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakgyo_20260322_Unknown",
+    "source": "학교",
+    "date": "2026-03-22",
+    "lesson": "Unknown",
+    "groups": [
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "彩虹",
+            "pinyin": "cǎi hóng",
+            "korean": "무지개",
+            "chinese_def": "雨后天空出现的七色弧形光带"
+          },
+          {
+            "hanzi": "回顾往事",
+            "pinyin": "huí gù wǎng shì",
+            "korean": "지난 일을 돌아보다",
+            "chinese_def": "回想过去发生的事情"
+          },
+          {
+            "hanzi": "开心果",
+            "pinyin": "kāi xīn guǒ",
+            "korean": "분위기 메이커, 피스타치오",
+            "chinese_def": "令人开心快乐的人或事物"
+          },
+          {
+            "hanzi": "不知几月几日",
+            "pinyin": "bù zhī jǐ yuè jǐ rì",
+            "korean": "몇 월 며칠인지 모르다",
+            "chinese_def": "不知道是哪一天"
+          },
+          {
+            "hanzi": "开心事",
+            "pinyin": "kāi xīn shì",
+            "korean": "기쁜 일",
+            "chinese_def": "令人高兴快乐的事情"
+          },
+          {
+            "hanzi": "今天真是一个特别的日子",
+            "pinyin": "jīn tiān zhēn shì yī gè tè bié de rì zi",
+            "korean": "오늘은 정말 특별한 날이다",
+            "chinese_def": "表示今天非常特殊"
+          },
+          {
+            "hanzi": "开心地事情都忘不掉",
+            "pinyin": "kāi xīn de shì qíng dōu wàng bù diào",
+            "korean": "기쁜 일들은 잊을 수 없다",
+            "chinese_def": "高兴的事情无法忘记"
+          },
+          {
+            "hanzi": "虽然美好，美好的学校生活",
+            "pinyin": "suī rán měi hǎo，měi hǎo de xué xiào shēng huó",
+            "korean": "비록 아름답지만, 아름다운 학교생활",
+            "chinese_def": "表示学校生活美好"
+          },
+          {
+            "hanzi": "美好的学校生活结束了，带着美好的回忆回家",
+            "pinyin": "měi hǎo de xué xiào shēng huó jié shù le，dài zhe měi hǎo de huí yì huí jiā",
+            "korean": "아름다운 학교생활이 끝나고, 아름다운 추억을 안고 집으로 돌아가다",
+            "chinese_def": "学校生活结束，带着美好回忆回家"
+          },
+          {
+            "hanzi": "为了美好，美好的学校生活带着美好的回忆回家，对美好的大家说：'有日再见！'",
+            "pinyin": "wèi le měi hǎo，měi hǎo de xué xiào shēng huó dài zhe měi hǎo de huí yì huí jiā，duì měi hǎo de dà jiā shuō：'yǒu rì zài jiàn！'",
+            "korean": "아름다움을 위해, 아름다운 추억을 안고 집으로 돌아가 모두에게 '다시 만나요!'라고 말하다",
+            "chinese_def": "带着美好回忆，向大家道别"
+          }
+        ]
+      }
+    ]
   }
 ];
