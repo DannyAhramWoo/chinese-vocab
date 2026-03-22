@@ -98,7 +98,9 @@ def extract_words_from_image(client, image_path):
 공통 규칙:
 - pinyin은 정확한 성조 포함 (예: nǐ hǎo)
 - 그룹이 여러 개면 groups 배열에 모두 포함
-- JSON만 반환, 설명 없이"""
+- JSON만 반환, 설명 없이
+- ⚠️ 중요: 문장 안에 큰따옴표(")가 있으면 반드시 \"로 이스케이프하거나, 중국어 인용 부호「」로 대체하세요
+  예: 说："你好" → 说：「你好」 또는 说：\"你好\""""
 
     response = client.messages.create(
         model="claude-sonnet-4-6",
