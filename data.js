@@ -60,5 +60,95 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakgyo_20260322_IMG4",
+    "source": "학교",
+    "date": "2026-03-22",
+    "lesson": "听写五 第五课《难忘的一天》",
+    "groups": [
+      {
+        "name": "听写句子 · 받아쓰기 문장",
+        "words": [
+          {
+            "hanzi": "傍晚",
+            "pinyin": "bàng wǎn",
+            "korean": "저녁 무렵, 황혼",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "电脑游戏",
+            "pinyin": "diàn nǎo yóu xì",
+            "korean": "컴퓨터 게임",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "生活快乐又多彩。",
+            "pinyin": "shēng huó kuài lè yòu duō cǎi。",
+            "korean": "생활이 즐겁고 다채롭다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "今天是几月几号？",
+            "pinyin": "jīn tiān shì jǐ yuè jǐ hào？",
+            "korean": "오늘은 몇 월 며칠이에요?",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "什么事情都难不倒我！",
+            "pinyin": "shén me shì qíng dōu nán bù dǎo wǒ！",
+            "korean": "어떤 일도 나를 이길 수 없다!",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "今天真是一个特别的日子！",
+            "pinyin": "jīn tiān zhēn shì yī gè tè bié de rì zi！",
+            "korean": "오늘은 정말 특별한 날이다!",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "桌上的美食都是奶奶准备的。",
+            "pinyin": "zhuō shàng de měi shí dōu shì nǎi nai zhǔn bèi de。",
+            "korean": "탁자 위의 맛있는 음식은 모두 할머니가 준비하신 것이다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "哥哥可以骑脚踏车或者放风筝。",
+            "pinyin": "gē ge kě yǐ qí jiǎo tà chē huò zhě fàng fēng zhēng。",
+            "korean": "오빠(형)는 자전거를 타거나 연을 날릴 수 있다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我跟着奶奶来到了附近的巴刹。",
+            "pinyin": "wǒ gēn zhe nǎi nai lái dào le fù jìn de bā shā。",
+            "korean": "나는 할머니를 따라 근처 시장(바자)에 왔다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "付了钱后，我提着东西走回家。",
+            "pinyin": "fù le qián hòu，wǒ tí zhe dōng xi zǒu huí jiā。",
+            "korean": "돈을 낸 후, 나는 물건을 들고 집으로 걸어갔다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "大家把杯子举得高高的，对着爷爷大声说：「生日快乐！」",
+            "pinyin": "dà jiā bǎ bēi zi jǔ de gāo gāo de，duì zhe yé ye dà shēng shuō：「shēng rì kuài lè！」",
+            "korean": "모두 잔을 높이 들고 할아버지를 향해 크게 말했다: 「생일 축하해요!」",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      }
+    ]
   }
 ];
