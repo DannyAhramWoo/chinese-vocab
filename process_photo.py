@@ -120,15 +120,11 @@ def extract_words_from_image(client, image_path):
                         "text": prompt
                     }
                 ],
-            },
-            {
-                "role": "assistant",
-                "content": "{"  # JSON 시작 강제 — 설명 텍스트 없이 바로 JSON 출력
             }
         ],
     )
 
-    return "{" + response.content[0].text  # 프리필 "{" 포함
+    return response.content[0].text
 
 # ── JSON 안전 파싱 (AI 응답의 제어문자 자동 수정) ──
 def safe_parse_json(raw):
