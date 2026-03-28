@@ -336,5 +336,186 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260328_L8",
+    "source": "학원",
+    "date": "2026-03-28",
+    "lesson": "L8",
+    "groups": [
+      {
+        "name": "词语复习 · 단어 복습",
+        "words": [
+          {
+            "hanzi": "部分",
+            "pinyin": "bù fen",
+            "korean": "부분",
+            "chinese_def": "整体中的一些",
+            "type": "word"
+          },
+          {
+            "hanzi": "接着",
+            "pinyin": "jiē zhe",
+            "korean": "이어서, 계속해서",
+            "chinese_def": "紧跟在后面",
+            "type": "word"
+          },
+          {
+            "hanzi": "穿",
+            "pinyin": "chuān",
+            "korean": "입다, 꿰다",
+            "chinese_def": "把衣服等套在身体上",
+            "type": "word"
+          },
+          {
+            "hanzi": "然后",
+            "pinyin": "rán hòu",
+            "korean": "그런 다음, 그 후",
+            "chinese_def": "表示接着某种动作或情况之后",
+            "type": "word"
+          },
+          {
+            "hanzi": "阳台",
+            "pinyin": "yáng tái",
+            "korean": "베란다, 발코니",
+            "chinese_def": "楼房中向外伸出的台子",
+            "type": "word"
+          },
+          {
+            "hanzi": "一块硬纸板",
+            "pinyin": "yī kuài yìng zhǐ bǎn",
+            "korean": "두꺼운 종이 한 장",
+            "chinese_def": "一张较硬的纸板",
+            "type": "word"
+          },
+          {
+            "hanzi": "客厅",
+            "pinyin": "kè tīng",
+            "korean": "거실",
+            "chinese_def": "家里接待客人的房间",
+            "type": "word"
+          },
+          {
+            "hanzi": "开始",
+            "pinyin": "kāi shǐ",
+            "korean": "시작하다",
+            "chinese_def": "从某一点着手进行",
+            "type": "word"
+          },
+          {
+            "hanzi": "整齐",
+            "pinyin": "zhěng qí",
+            "korean": "가지런하다, 정돈되다",
+            "chinese_def": "有秩序，不乱",
+            "type": "word"
+          },
+          {
+            "hanzi": "让",
+            "pinyin": "ràng",
+            "korean": "~하게 하다, 양보하다",
+            "chinese_def": "允许或叫别人做某事",
+            "type": "word"
+          },
+          {
+            "hanzi": "手忙脚乱",
+            "pinyin": "shǒu máng jiǎo luàn",
+            "korean": "허둥지둥하다, 바쁘고 혼란스럽다",
+            "chinese_def": "形容做事慌张，忙乱",
+            "type": "word"
+          },
+          {
+            "hanzi": "累得满头大汗",
+            "pinyin": "lèi de mǎn tóu dà hàn",
+            "korean": "피곤해서 온 머리에 땀이 가득하다",
+            "chinese_def": "形容非常疲劳，汗水布满头部",
+            "type": "word"
+          },
+          {
+            "hanzi": "需要",
+            "pinyin": "xū yào",
+            "korean": "필요하다",
+            "chinese_def": "有必要，有需求",
+            "type": "word"
+          },
+          {
+            "hanzi": "贺卡",
+            "pinyin": "hè kǎ",
+            "korean": "축하 카드",
+            "chinese_def": "用来表示祝贺的卡片",
+            "type": "word"
+          },
+          {
+            "hanzi": "小洞",
+            "pinyin": "xiǎo dòng",
+            "korean": "작은 구멍",
+            "chinese_def": "小的孔或穴",
+            "type": "word"
+          },
+          {
+            "hanzi": "涂颜色",
+            "pinyin": "tú yán sè",
+            "korean": "색칠하다",
+            "chinese_def": "用颜料或彩笔涂上颜色",
+            "type": "word"
+          },
+          {
+            "hanzi": "吊",
+            "pinyin": "diào",
+            "korean": "매달다",
+            "chinese_def": "悬挂",
+            "type": "word"
+          },
+          {
+            "hanzi": "挂灯笼",
+            "pinyin": "guà dēng lóng",
+            "korean": "등롱을 달다",
+            "chinese_def": "将灯笼悬挂起来",
+            "type": "word"
+          },
+          {
+            "hanzi": "请求",
+            "pinyin": "qǐng qiú",
+            "korean": "부탁하다, 요청하다",
+            "chinese_def": "向别人提出希望得到帮助或满足的愿望",
+            "type": "word"
+          },
+          {
+            "hanzi": "比较",
+            "pinyin": "bǐ jiào",
+            "korean": "비교적, 비교하다",
+            "chinese_def": "就两种或两种以上同类事物辨别异同",
+            "type": "word"
+          },
+          {
+            "hanzi": "乱塞",
+            "pinyin": "luàn sāi",
+            "korean": "마구 쑤셔 넣다",
+            "chinese_def": "胡乱地塞进去",
+            "type": "word"
+          },
+          {
+            "hanzi": "晒衣服",
+            "pinyin": "shài yī fu",
+            "korean": "옷을 햇볕에 말리다",
+            "chinese_def": "把衣服放在太阳下晾干",
+            "type": "word"
+          },
+          {
+            "hanzi": "歪歪斜斜",
+            "pinyin": "wāi wāi xié xié",
+            "korean": "비뚤비뚤하다, 기울어지다",
+            "chinese_def": "形容不正，倾斜的样子",
+            "type": "word"
+          },
+          {
+            "hanzi": "裙子和裤子",
+            "pinyin": "qún zi hé kù zi",
+            "korean": "치마와 바지",
+            "chinese_def": "裙子与裤子的合称",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
