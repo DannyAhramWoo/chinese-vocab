@@ -457,7 +457,7 @@ function startSession(sessionId) {
   currentSession = (window.VOCAB_DATA || []).find(s => s.id === sessionId);
   if (!currentSession) return;
 
-  currentWords = shuffle(currentSession.groups.flatMap(g => g.words));
+  currentWords = currentSession.groups.flatMap(g => g.words);
   currentIndex = 0;
   results      = [];
 
@@ -695,7 +695,7 @@ function showResult() {
 }
 
 function restartSession() {
-  currentWords = shuffle(currentSession.groups.flatMap(g => g.words));
+  currentWords = currentSession.groups.flatMap(g => g.words);
   currentIndex = 0; results = [];
   initStatusDots();
   showScreen('flashcard');
