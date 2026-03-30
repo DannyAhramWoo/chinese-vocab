@@ -607,5 +607,191 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260330_Unknown",
+    "source": "학원",
+    "date": "2026-03-30",
+    "lesson": "Unknown",
+    "groups": [
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "大象鼻子",
+            "pinyin": "dà xiàng bí zi",
+            "korean": "코끼리 코",
+            "chinese_def": "大象的鼻子",
+            "type": "word"
+          },
+          {
+            "hanzi": "伸进",
+            "pinyin": "shēn jìn",
+            "korean": "뻗어 들어가다",
+            "chinese_def": "向里面延伸进去",
+            "type": "word"
+          },
+          {
+            "hanzi": "小河",
+            "pinyin": "xiǎo hé",
+            "korean": "작은 강, 개울",
+            "chinese_def": "小的河流",
+            "type": "word"
+          },
+          {
+            "hanzi": "救命",
+            "pinyin": "jiù mìng",
+            "korean": "살려주세요, 구명",
+            "chinese_def": "救人的生命",
+            "type": "word"
+          },
+          {
+            "hanzi": "篮子",
+            "pinyin": "lán zi",
+            "korean": "바구니",
+            "chinese_def": "用来盛放东西的器具",
+            "type": "word"
+          },
+          {
+            "hanzi": "不停",
+            "pinyin": "bù tíng",
+            "korean": "멈추지 않다, 쉬지 않다",
+            "chinese_def": "不断地，没有停止",
+            "type": "word"
+          },
+          {
+            "hanzi": "装满",
+            "pinyin": "zhuāng mǎn",
+            "korean": "가득 채우다",
+            "chinese_def": "装到满为止",
+            "type": "word"
+          },
+          {
+            "hanzi": "上升",
+            "pinyin": "shàng shēng",
+            "korean": "상승하다, 올라가다",
+            "chinese_def": "向上移动",
+            "type": "word"
+          },
+          {
+            "hanzi": "问题",
+            "pinyin": "wèn tí",
+            "korean": "문제",
+            "chinese_def": "需要解决的事情",
+            "type": "word"
+          },
+          {
+            "hanzi": "回答",
+            "pinyin": "huí dá",
+            "korean": "대답하다",
+            "chinese_def": "对问题给予答复",
+            "type": "word"
+          },
+          {
+            "hanzi": "手拉手",
+            "pinyin": "shǒu lā shǒu",
+            "korean": "손에 손을 잡다",
+            "chinese_def": "互相牵手",
+            "type": "word"
+          },
+          {
+            "hanzi": "小船",
+            "pinyin": "xiǎo chuán",
+            "korean": "작은 배",
+            "chinese_def": "小的船只",
+            "type": "word"
+          },
+          {
+            "hanzi": "重量",
+            "pinyin": "zhòng liàng",
+            "korean": "무게, 중량",
+            "chinese_def": "物体的轻重",
+            "type": "word"
+          },
+          {
+            "hanzi": "夸",
+            "pinyin": "kuā",
+            "korean": "칭찬하다",
+            "chinese_def": "称赞",
+            "type": "word"
+          },
+          {
+            "hanzi": "神童",
+            "pinyin": "shén tóng",
+            "korean": "신동",
+            "chinese_def": "非常聪明的孩子",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "认读词语 · 읽기 단어",
+        "words": [
+          {
+            "hanzi": "小熊",
+            "pinyin": "xiǎo xióng",
+            "korean": "작은 곰, 아기 곰",
+            "chinese_def": "小的熊",
+            "type": "word"
+          },
+          {
+            "hanzi": "土坑",
+            "pinyin": "tǔ kēng",
+            "korean": "흙구덩이",
+            "chinese_def": "地上挖出的坑",
+            "type": "word"
+          },
+          {
+            "hanzi": "猴子",
+            "pinyin": "hóu zi",
+            "korean": "원숭이",
+            "chinese_def": "一种灵长类动物",
+            "type": "word"
+          },
+          {
+            "hanzi": "竹竿",
+            "pinyin": "zhú gān",
+            "korean": "대나무 장대",
+            "chinese_def": "用竹子做的长棍",
+            "type": "word"
+          },
+          {
+            "hanzi": "喷水",
+            "pinyin": "pēn shuǐ",
+            "korean": "물을 뿜다",
+            "chinese_def": "把水喷出来",
+            "type": "word"
+          },
+          {
+            "hanzi": "称重",
+            "pinyin": "chēng zhòng",
+            "korean": "무게를 달다",
+            "chinese_def": "测量物体的重量",
+            "type": "word"
+          },
+          {
+            "hanzi": "官员",
+            "pinyin": "guān yuán",
+            "korean": "관원, 관리",
+            "chinese_def": "政府的工作人员",
+            "type": "word"
+          },
+          {
+            "hanzi": "墙",
+            "pinyin": "qiáng",
+            "korean": "벽, 담",
+            "chinese_def": "建筑物的围墙",
+            "type": "word"
+          },
+          {
+            "hanzi": "下沉",
+            "pinyin": "xià chén",
+            "korean": "가라앉다, 침하하다",
+            "chinese_def": "向下沉降",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];

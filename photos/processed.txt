@@ -6,5 +6,6 @@ photos/학교/IMG_7974.jpeg
 photos/학원/IMG_7931.HEIC
 photos/학원/IMG_7933.jpeg
 photos/학원/IMG_7969.jpeg
+photos/학원/IMG_7983.jpeg
 photos/학원/academy.jpeg
 photos/학원/academy1.jpeg
