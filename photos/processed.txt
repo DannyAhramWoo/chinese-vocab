@@ -4,6 +4,7 @@ photos/학교/IMG4.heic
 photos/학교/IMG_7935.heic
 photos/학교/IMG_7974.jpeg
 photos/학교/IMG_8001.jpeg
+photos/학교/IMG_8013.jpeg
 photos/학원/IMG_7931.HEIC
 photos/학원/IMG_7933.jpeg
 photos/학원/IMG_7969.jpeg
