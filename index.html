@@ -591,7 +591,7 @@ function toggleHint() {
 }
 
 // ── Sound (Singapore Chinese) ──
-function playSound(rate = 1.0, pitch = 1.1) {
+function playSound(rate = 0.8, pitch = 1.1) {
   if (!('speechSynthesis' in window)) return;
   speechSynthesis.cancel(); // 진행 중인 음성 중지
 
