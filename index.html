@@ -593,47 +593,67 @@ function toggleHint() {
 // ── Sound (Singapore Chinese) ──
 // rate: 말하기 속도 (기본 1.0)
 // pitch: 음높이 (기본 1.0, 1.1 추천)
-function playSingaporeChineseSound(rate = 1.0, pitch = 1.1) {
+
+// 💡 1. HTML 등 기존 코드와의 호환성을 위해 함수 이름을 원래대로(playSound) 되돌렸습니다.
+function playSound(rate = 1.0, pitch = 1.1) {
   if (!('speechSynthesis' in window)) return;
   speechSynthesis.cancel(); // 진행 중인 음성 중지
+
+  // 단어 목록이 끝났거나 오류가 있을 때 실행 방지
+  if (!currentWords || !currentWords[currentIndex]) return;
 
   const wordToSpeak = currentWords[currentIndex].word;
   const utter = new SpeechSynthesisUtterance(wordToSpeak);
   
-  // 1. 속도, 음높이, 언어 설정
+  // 속도, 음높이, 언어 설정
   utter.rate = rate;   
   utter.pitch = pitch; 
   utter.lang = 'zh-SG'; // 싱가포르 중국어를 기본으로 설정
 
-  // 2. 목소리(Voice) 선택 로직
-  const voices = speechSynthesis.getVoices();
+  // 💡 2. 목소리(Voice) 선택 로직
+  let voices = speechSynthesis.getVoices();
   
-  // 싱가포르 중국어 고품질 음성 우선 탐색 (Google 제공 등)
-  const premiumSgZhVoice = voices.find(v => 
-    (v.name.includes('Google') && v.lang.includes('zh-SG'))
-  );
-  
-  // 국가별 중국어 코드 탐색
-  const sgZhVoice = voices.find(v => v.lang === 'zh-SG' || v.lang === 'zh_SG'); // 싱가포르
-  const cnVoice = voices.find(v => v.lang === 'zh-CN' || v.lang === 'zh_CN');   // 중국 본토 (가장 유사한 억양)
-  const twVoice = voices.find(v => v.lang === 'zh-TW' || v.lang === 'zh_TW');   // 대만
-  const zhVoice = voices.find(v => v.lang.startsWith('zh'));                    // 기타 중국어
+  // voices가 비어있을 경우를 대비한 안전 장치 (음성 강제 로드 후 할당)
+  const assignVoiceAndSpeak = () => {
+    voices = speechSynthesis.getVoices();
 
-  // 3. 목소리 할당 (싱가포르 고품질 -> 일반 싱가포르 -> 중국 본토 -> 대만 -> 기타 순)
-  if (premiumSgZhVoice) {
-    utter.voice = premiumSgZhVoice;
-  } else if (sgZhVoice) {
-    utter.voice = sgZhVoice;
-  } else if (cnVoice) {
-    utter.voice = cnVoice;
-  } else if (twVoice) {
-    utter.voice = twVoice;
-  } else if (zhVoice) {
-    utter.voice = zhVoice;
+    const premiumSgZhVoice = voices.find(v => (v.name.includes('Google') && v.lang.includes('zh-SG')));
+    const sgZhVoice = voices.find(v => v.lang === 'zh-SG' || v.lang === 'zh_SG'); 
+    const cnVoice = voices.find(v => v.lang === 'zh-CN' || v.lang === 'zh_CN');   
+    const twVoice = voices.find(v => v.lang === 'zh-TW' || v.lang === 'zh_TW');   
+    const zhVoice = voices.find(v => v.lang.startsWith('zh'));                    
+
+    if (premiumSgZhVoice) utter.voice = premiumSgZhVoice;
+    else if (sgZhVoice) utter.voice = sgZhVoice;
+    else if (cnVoice) utter.voice = cnVoice;
+    else if (twVoice) utter.voice = twVoice;
+    else if (zhVoice) utter.voice = zhVoice;
+
+    speechSynthesis.speak(utter);
+  };
+
+  // Chrome 등에서 voices를 아직 못 불러온 상태라면 이벤트를 기다렸다가 실행
+  if (voices.length === 0) {
+    speechSynthesis.onvoiceschanged = assignVoiceAndSpeak;
+  } else {
+    assignVoiceAndSpeak();
   }
-
-  speechSynthesis.speak(utter);
 }
+
+// ── Mark answer ──
+function markAnswer(correct) {
+  results[currentIndex] = correct;
+  currentIndex++;
+  renderCard();
+}
+
+// ── Skip (next without answering) ──
+function skipCard() {
+  if (results[currentIndex] === undefined) results[currentIndex] = false;
+  currentIndex++;
+  renderCard();
+}
+
 // ── Mark answer ──
 function markAnswer(correct) {
   results[currentIndex] = correct;
