@@ -1327,5 +1327,95 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakgyo_20260415_IMG_8087",
+    "source": "학교",
+    "date": "2026-04-15",
+    "lesson": "听写六 · 第六课《是我不好》",
+    "groups": [
+      {
+        "name": "听写句子 · 받아쓰기 문장",
+        "words": [
+          {
+            "hanzi": "谢谢你",
+            "pinyin": "xiè xiè nǐ",
+            "korean": "감사합니다 / 고마워요",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "做错事",
+            "pinyin": "zuò cuò shì",
+            "korean": "잘못된 일을 하다",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "她们谁也不理谁",
+            "pinyin": "tā men shuí yě bù lǐ shuí",
+            "korean": "그녀들은 서로 아무도 상대하지 않는다",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "你可以原谅我吗？",
+            "pinyin": "nǐ kě yǐ yuán liàng wǒ ma？",
+            "korean": "나를 용서해줄 수 있어?",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我不小心撞到同学。",
+            "pinyin": "wǒ bù xiǎo xīn zhuàng dào tóng xué。",
+            "korean": "나는 실수로 친구와 부딪혔다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "小乐立刻跑上前去扶起她。",
+            "pinyin": "xiǎo lè lì kè pǎo shàng qián qù fú qǐ tā。",
+            "korean": "샤오러는 즉시 앞으로 달려가 그녀를 부축해 일으켰다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "是我不对，我不应该推你。",
+            "pinyin": "shì wǒ bù duì，wǒ bù yīng gāi tuī nǐ。",
+            "korean": "내가 잘못했어, 나는 너를 밀면 안 됐어.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "美美在赛跑时跌倒受伤了。",
+            "pinyin": "měi měi zài sài pǎo shí diē dǎo shòu shāng le。",
+            "korean": "메이메이는 달리기 경주 중에 넘어져서 다쳤다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "对不起，我弄破了你的故事书。",
+            "pinyin": "duì bu qǐ，wǒ nòng pò le nǐ de gù shi shū。",
+            "korean": "미안해, 내가 네 동화책을 망가뜨렸어.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "美美像一阵风一样冲过来，小乐来不及躲开，被撞倒了。",
+            "pinyin": "měi měi xiàng yī zhèn fēng yī yàng chōng guò lái，xiǎo lè lái bu jí duǒ kāi，bèi zhuàng dǎo le。",
+            "korean": "메이메이가 한줄기 바람처럼 달려왔고, 샤오러는 피할 겨를도 없이 부딪혀 넘어졌다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "运动会那天，比赛场上龙争虎斗，同学们你追我赶，都想要得到第一名。",
+            "pinyin": "yùn dòng huì nà tiān，bǐ sài chǎng shàng lóng zhēng hǔ dòu，tóng xué men nǐ zhuī wǒ gǎn，dōu xiǎng yào dé dào dì yī míng。",
+            "korean": "운동회 그날, 경기장에서 치열하게 경쟁하며 서로 앞다투어 1등을 차지하려 했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      }
+    ]
   }
 ];
