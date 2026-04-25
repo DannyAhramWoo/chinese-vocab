@@ -1417,5 +1417,317 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260425_T2L041",
+    "source": "학원",
+    "date": "2026-04-25",
+    "lesson": "T2L04-1",
+    "groups": [
+      {
+        "name": "L4 · 词语复习",
+        "words": [
+          {
+            "hanzi": "变化",
+            "pinyin": "biàn huà",
+            "korean": "변화",
+            "chinese_def": "事物在形态或本质上产生新的状况",
+            "type": "word"
+          },
+          {
+            "hanzi": "长短",
+            "pinyin": "cháng duǎn",
+            "korean": "길이, 장단",
+            "chinese_def": "长度的大小",
+            "type": "word"
+          },
+          {
+            "hanzi": "绿豆",
+            "pinyin": "lǜ dòu",
+            "korean": "녹두",
+            "chinese_def": "一种绿色的豆类植物",
+            "type": "word"
+          },
+          {
+            "hanzi": "细细的根",
+            "pinyin": "xì xì de gēn",
+            "korean": "가느다란 뿌리",
+            "chinese_def": "很细的根部",
+            "type": "word"
+          },
+          {
+            "hanzi": "越来越长",
+            "pinyin": "yuè lái yuè cháng",
+            "korean": "점점 더 길어지다",
+            "chinese_def": "随着时间推移不断变长",
+            "type": "word"
+          },
+          {
+            "hanzi": "一条尾巴",
+            "pinyin": "yī tiáo wěi ba",
+            "korean": "꼬리 하나",
+            "chinese_def": "一根尾巴",
+            "type": "word"
+          },
+          {
+            "hanzi": "阿姨",
+            "pinyin": "ā yí",
+            "korean": "아주머니, 이모",
+            "chinese_def": "对年长女性的称呼",
+            "type": "word"
+          },
+          {
+            "hanzi": "哪里",
+            "pinyin": "nǎ lǐ",
+            "korean": "어디",
+            "chinese_def": "询问地点的疑问词",
+            "type": "word"
+          },
+          {
+            "hanzi": "大喊",
+            "pinyin": "dà hǎn",
+            "korean": "크게 외치다",
+            "chinese_def": "大声呼喊",
+            "type": "word"
+          },
+          {
+            "hanzi": "披着",
+            "pinyin": "pī zhe",
+            "korean": "걸치다, 두르다",
+            "chinese_def": "披在身上",
+            "type": "word"
+          },
+          {
+            "hanzi": "衣服",
+            "pinyin": "yī fu",
+            "korean": "옷",
+            "chinese_def": "穿在身上的服装",
+            "type": "word"
+          },
+          {
+            "hanzi": "肚皮",
+            "pinyin": "dù pí",
+            "korean": "배, 뱃가죽",
+            "chinese_def": "腹部的皮肤",
+            "type": "word"
+          },
+          {
+            "hanzi": "内外",
+            "pinyin": "nèi wài",
+            "korean": "안팎, 내외",
+            "chinese_def": "里面和外面",
+            "type": "word"
+          },
+          {
+            "hanzi": "出入",
+            "pinyin": "chū rù",
+            "korean": "출입",
+            "chinese_def": "进出",
+            "type": "word"
+          },
+          {
+            "hanzi": "由浅变深",
+            "pinyin": "yóu qiǎn biàn shēn",
+            "korean": "얕은 곳에서 깊은 곳으로 변하다",
+            "chinese_def": "从浅的程度变为深的程度",
+            "type": "word"
+          },
+          {
+            "hanzi": "宽窄",
+            "pinyin": "kuān zhǎi",
+            "korean": "너비, 폭",
+            "chinese_def": "宽度的大小",
+            "type": "word"
+          },
+          {
+            "hanzi": "幼苗",
+            "pinyin": "yòu miáo",
+            "korean": "어린 싹, 유묘",
+            "chinese_def": "刚长出来的嫩苗",
+            "type": "word"
+          },
+          {
+            "hanzi": "生死",
+            "pinyin": "shēng sǐ",
+            "korean": "생사",
+            "chinese_def": "生存和死亡",
+            "type": "word"
+          },
+          {
+            "hanzi": "摆动",
+            "pinyin": "bǎi dòng",
+            "korean": "흔들리다, 움직이다",
+            "chinese_def": "来回移动",
+            "type": "word"
+          },
+          {
+            "hanzi": "双腿",
+            "pinyin": "shuāng tuǐ",
+            "korean": "두 다리",
+            "chinese_def": "两条腿",
+            "type": "word"
+          },
+          {
+            "hanzi": "嘴巴",
+            "pinyin": "zuǐ ba",
+            "korean": "입",
+            "chinese_def": "口部",
+            "type": "word"
+          },
+          {
+            "hanzi": "露出",
+            "pinyin": "lù chū",
+            "korean": "드러내다, 나타나다",
+            "chinese_def": "显现出来",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "L5 · 词语复习",
+        "words": [
+          {
+            "hanzi": "十号",
+            "pinyin": "shí hào",
+            "korean": "10일, 10호",
+            "chinese_def": "日期或编号第十",
+            "type": "word"
+          },
+          {
+            "hanzi": "傍晚",
+            "pinyin": "bàng wǎn",
+            "korean": "저녁 무렵, 황혼",
+            "chinese_def": "接近晚上的时候",
+            "type": "word"
+          },
+          {
+            "hanzi": "脚踏车",
+            "pinyin": "jiǎo tà chē",
+            "korean": "자전거",
+            "chinese_def": "用脚踩踏板驱动的车",
+            "type": "word"
+          },
+          {
+            "hanzi": "或者",
+            "pinyin": "huò zhě",
+            "korean": "또는, 혹은",
+            "chinese_def": "表示选择关系的连词",
+            "type": "word"
+          },
+          {
+            "hanzi": "电脑",
+            "pinyin": "diàn nǎo",
+            "korean": "컴퓨터",
+            "chinese_def": "电子计算机",
+            "type": "word"
+          },
+          {
+            "hanzi": "美食",
+            "pinyin": "měi shí",
+            "korean": "맛있는 음식, 미식",
+            "chinese_def": "好吃的食物",
+            "type": "word"
+          },
+          {
+            "hanzi": "多彩",
+            "pinyin": "duō cǎi",
+            "korean": "다채롭다, 화려하다",
+            "chinese_def": "色彩丰富多样",
+            "type": "word"
+          },
+          {
+            "hanzi": "附近",
+            "pinyin": "fù jìn",
+            "korean": "근처, 부근",
+            "chinese_def": "靠近某处的地方",
+            "type": "word"
+          },
+          {
+            "hanzi": "付钱",
+            "pinyin": "fù qián",
+            "korean": "돈을 내다, 지불하다",
+            "chinese_def": "交付金钱",
+            "type": "word"
+          },
+          {
+            "hanzi": "事情",
+            "pinyin": "shì qíng",
+            "korean": "일, 사건",
+            "chinese_def": "人类生活中的各种活动和现象",
+            "type": "word"
+          },
+          {
+            "hanzi": "准备",
+            "pinyin": "zhǔn bèi",
+            "korean": "준비하다",
+            "chinese_def": "事先安排好",
+            "type": "word"
+          },
+          {
+            "hanzi": "特别",
+            "pinyin": "tè bié",
+            "korean": "특별하다, 특히",
+            "chinese_def": "与众不同，格外",
+            "type": "word"
+          },
+          {
+            "hanzi": "电脑展",
+            "pinyin": "diàn nǎo zhǎn",
+            "korean": "컴퓨터 전시회",
+            "chinese_def": "展示电脑产品的展览会",
+            "type": "word"
+          },
+          {
+            "hanzi": "旅游",
+            "pinyin": "lǚ yóu",
+            "korean": "여행",
+            "chinese_def": "到外地或外国游览",
+            "type": "word"
+          },
+          {
+            "hanzi": "演艺课",
+            "pinyin": "yǎn yì kè",
+            "korean": "공연 예술 수업",
+            "chinese_def": "学习表演艺术的课程",
+            "type": "word"
+          },
+          {
+            "hanzi": "报纸",
+            "pinyin": "bào zhǐ",
+            "korean": "신문",
+            "chinese_def": "印有新闻的纸张刊物",
+            "type": "word"
+          },
+          {
+            "hanzi": "杂志",
+            "pinyin": "zá zhì",
+            "korean": "잡지",
+            "chinese_def": "定期出版的综合性刊物",
+            "type": "word"
+          },
+          {
+            "hanzi": "刚刚",
+            "pinyin": "gāng gāng",
+            "korean": "방금, 막",
+            "chinese_def": "表示不久前发生的事",
+            "type": "word"
+          },
+          {
+            "hanzi": "提东西",
+            "pinyin": "tí dōng xi",
+            "korean": "물건을 들다",
+            "chinese_def": "用手提着物品",
+            "type": "word"
+          },
+          {
+            "hanzi": "一束鲜花",
+            "pinyin": "yī shù xiān huā",
+            "korean": "꽃 한 다발",
+            "chinese_def": "一捆新鲜的花",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
