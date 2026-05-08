@@ -14,3 +14,4 @@ photos/학원/IMG_8055.jpeg
 photos/학원/IMG_8144.jpeg
 photos/학원/academy.jpeg
 photos/학원/academy1.jpeg
+photos/학원/image.jpg
