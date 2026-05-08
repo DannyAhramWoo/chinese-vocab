@@ -146,6 +146,13 @@ def safe_parse_json(raw):
     except json.JSONDecodeError:
         pass
 
+    # trailing comma 제거 (예: {"key": "val",} 또는 [...,])
+    raw = re.sub(r',\s*([}\]])', r'\1', raw)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        pass
+
     # 문자열 안의 이스케이프되지 않은 개행/탭 문자 수정
     result = []
     in_string = False
@@ -173,6 +180,8 @@ def safe_parse_json(raw):
         i += 1
 
     fixed = ''.join(result)
+    # trailing comma 재처리 (개행 수정 후)
+    fixed = re.sub(r',\s*([}\]])', r'\1', fixed)
     try:
         return json.loads(fixed)
     except json.JSONDecodeError as e:
