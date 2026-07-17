@@ -2221,5 +2221,163 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260717_T3L033",
+    "source": "학원",
+    "date": "2026-07-17",
+    "lesson": "T3L03-3",
+    "groups": [
+      {
+        "name": "词语填写 · 선택 단어",
+        "words": [
+          {
+            "hanzi": "浪费",
+            "pinyin": "làng fèi",
+            "korean": "낭비하다",
+            "chinese_def": "不必要地消耗或使用",
+            "type": "word"
+          },
+          {
+            "hanzi": "爱惜",
+            "pinyin": "ài xī",
+            "korean": "아끼다, 소중히 여기다",
+            "chinese_def": "珍惜，不浪费",
+            "type": "word"
+          },
+          {
+            "hanzi": "保持",
+            "pinyin": "bǎo chí",
+            "korean": "유지하다",
+            "chinese_def": "维持某种状态不变",
+            "type": "word"
+          },
+          {
+            "hanzi": "随手",
+            "pinyin": "suí shǒu",
+            "korean": "손 닿는 대로, 수시로",
+            "chinese_def": "顺手，不费力地",
+            "type": "word"
+          },
+          {
+            "hanzi": "日用品",
+            "pinyin": "rì yòng pǐn",
+            "korean": "일용품, 생활용품",
+            "chinese_def": "日常生活中使用的物品",
+            "type": "word"
+          },
+          {
+            "hanzi": "分",
+            "pinyin": "fēn",
+            "korean": "나누다, 분리하다",
+            "chinese_def": "分开，划分",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "乒乓球",
+            "pinyin": "pīng pāng qiú",
+            "korean": "탁구",
+            "chinese_def": "一种球类运动",
+            "type": "word"
+          },
+          {
+            "hanzi": "冰袋",
+            "pinyin": "bīng dài",
+            "korean": "아이스팩, 얼음팩",
+            "chinese_def": "装有冰块的袋子",
+            "type": "word"
+          },
+          {
+            "hanzi": "鱼缸",
+            "pinyin": "yú gāng",
+            "korean": "어항",
+            "chinese_def": "养鱼用的玻璃缸",
+            "type": "word"
+          },
+          {
+            "hanzi": "责任",
+            "pinyin": "zé rèn",
+            "korean": "책임",
+            "chinese_def": "应尽的义务或职责",
+            "type": "word"
+          },
+          {
+            "hanzi": "大理石",
+            "pinyin": "dà lǐ shí",
+            "korean": "대리석",
+            "chinese_def": "一种建筑用石材",
+            "type": "word"
+          },
+          {
+            "hanzi": "素好",
+            "pinyin": "sù hǎo",
+            "korean": "평소에 좋은 (관계)",
+            "chinese_def": "平素交好",
+            "type": "word"
+          },
+          {
+            "hanzi": "金分",
+            "pinyin": "jīn fēn",
+            "korean": "금 성분",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "费用",
+            "pinyin": "fèi yòng",
+            "korean": "비용",
+            "chinese_def": "花费的钱",
+            "type": "word"
+          },
+          {
+            "hanzi": "如",
+            "pinyin": "rú",
+            "korean": "예를 들어, ~처럼",
+            "chinese_def": "例如，好像",
+            "type": "word"
+          },
+          {
+            "hanzi": "环保袋",
+            "pinyin": "huán bǎo dài",
+            "korean": "에코백, 친환경 가방",
+            "chinese_def": "环保购物袋",
+            "type": "word"
+          },
+          {
+            "hanzi": "黄色",
+            "pinyin": "huáng sè",
+            "korean": "노란색",
+            "chinese_def": "颜色的一种",
+            "type": "word"
+          },
+          {
+            "hanzi": "摔碎",
+            "pinyin": "shuāi suì",
+            "korean": "떨어뜨려 깨다",
+            "chinese_def": "掉落后破碎",
+            "type": "word"
+          },
+          {
+            "hanzi": "自外",
+            "pinyin": "zì wài",
+            "korean": "~을 제외하고",
+            "chinese_def": "除外",
+            "type": "word"
+          },
+          {
+            "hanzi": "灯",
+            "pinyin": "dēng",
+            "korean": "등, 전등",
+            "chinese_def": "照明用具",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
