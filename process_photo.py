@@ -194,6 +194,14 @@ def safe_parse_json(raw):
 def update_data_js(new_session, data_js_path):
     content = Path(data_js_path).read_text(encoding='utf-8')
 
+    # 같은 id가 이미 있으면 중단. 앱이 세션을 id로 찾으므로(find),
+    # id가 겹치면 뒤 세션은 영영 열리지 않고 단어수만 두 배로 잡힌다.
+    if f'"id": "{new_session["id"]}"' in content or f"id: '{new_session['id']}'" in content:
+        print(f"  ⚠️  건너뜀: id '{new_session['id']}' 가 이미 data.js에 있습니다.")
+        print(f"      같은 사진을 다시 분석했거나, 레슨명이 같은 다른 사진일 수 있습니다.")
+        print(f"      다른 사진이라면 레슨명을 구분해서 다시 시도하세요.")
+        return False
+
     session_str = json.dumps(new_session, ensure_ascii=False, indent=2)
     session_indented = '\n'.join('  ' + line for line in session_str.split('\n'))
 
