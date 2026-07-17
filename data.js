@@ -2379,5 +2379,170 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260717_T3L033",
+    "source": "학원",
+    "date": "2026-07-17",
+    "lesson": "T3L03-3",
+    "groups": [
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "环保袋",
+            "pinyin": "huán bǎo dài",
+            "korean": "친환경 가방",
+            "chinese_def": "用于环保目的的购物袋",
+            "type": "word"
+          },
+          {
+            "hanzi": "装水果",
+            "pinyin": "zhuāng shuǐ guǒ",
+            "korean": "과일을 담다",
+            "chinese_def": "把水果放入容器中",
+            "type": "word"
+          },
+          {
+            "hanzi": "报纸",
+            "pinyin": "bào zhǐ",
+            "korean": "신문",
+            "chinese_def": "印有新闻的纸张",
+            "type": "word"
+          },
+          {
+            "hanzi": "组屋",
+            "pinyin": "zǔ wū",
+            "korean": "조합 주택 (HDB 아파트)",
+            "chinese_def": "新加坡政府建造的公共住宅",
+            "type": "word"
+          },
+          {
+            "hanzi": "停车场",
+            "pinyin": "tíng chē chǎng",
+            "korean": "주차장",
+            "chinese_def": "供车辆停放的场所",
+            "type": "word"
+          },
+          {
+            "hanzi": "一辆车",
+            "pinyin": "yī liàng chē",
+            "korean": "차 한 대",
+            "chinese_def": "一台车",
+            "type": "word"
+          },
+          {
+            "hanzi": "浪费",
+            "pinyin": "làng fèi",
+            "korean": "낭비하다",
+            "chinese_def": "不节约地使用",
+            "type": "word"
+          },
+          {
+            "hanzi": "所以",
+            "pinyin": "suǒ yǐ",
+            "korean": "그래서",
+            "chinese_def": "表示结果或结论的连词",
+            "type": "word"
+          },
+          {
+            "hanzi": "日用品",
+            "pinyin": "rì yòng pǐn",
+            "korean": "일용품",
+            "chinese_def": "日常生活中使用的物品",
+            "type": "word"
+          },
+          {
+            "hanzi": "认为",
+            "pinyin": "rèn wéi",
+            "korean": "~라고 생각하다",
+            "chinese_def": "表示个人的看法或判断",
+            "type": "word"
+          },
+          {
+            "hanzi": "如果",
+            "pinyin": "rú guǒ",
+            "korean": "만약",
+            "chinese_def": "表示假设的连词",
+            "type": "word"
+          },
+          {
+            "hanzi": "尽一份力",
+            "pinyin": "jìn yī fèn lì",
+            "korean": "힘을 다하다, 한 몫을 하다",
+            "chinese_def": "尽自己的一份努力",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "认读词语 · 읽기 단어",
+        "words": [
+          {
+            "hanzi": "代替",
+            "pinyin": "dài tì",
+            "korean": "대체하다",
+            "chinese_def": "用另一个取代原来的",
+            "type": "word"
+          },
+          {
+            "hanzi": "塑料",
+            "pinyin": "sù liào",
+            "korean": "플라스틱",
+            "chinese_def": "一种人造材料",
+            "type": "word"
+          },
+          {
+            "hanzi": "巴刹",
+            "pinyin": "bā shā",
+            "korean": "재래시장 (바자)",
+            "chinese_def": "新加坡的传统市场",
+            "type": "word"
+          },
+          {
+            "hanzi": "使用",
+            "pinyin": "shǐ yòng",
+            "korean": "사용하다",
+            "chinese_def": "利用某物达到目的",
+            "type": "word"
+          },
+          {
+            "hanzi": "废物利用",
+            "pinyin": "fèi wù lì yòng",
+            "korean": "폐품 재활용",
+            "chinese_def": "将废弃物品重新利用",
+            "type": "word"
+          },
+          {
+            "hanzi": "瓶子",
+            "pinyin": "píng zi",
+            "korean": "병",
+            "chinese_def": "用于装液体的容器",
+            "type": "word"
+          },
+          {
+            "hanzi": "并排",
+            "pinyin": "bìng pái",
+            "korean": "나란히",
+            "chinese_def": "并列排列",
+            "type": "word"
+          },
+          {
+            "hanzi": "海洋",
+            "pinyin": "hǎi yáng",
+            "korean": "해양, 바다",
+            "chinese_def": "广大的咸水水域",
+            "type": "word"
+          },
+          {
+            "hanzi": "责任",
+            "pinyin": "zé rèn",
+            "korean": "책임",
+            "chinese_def": "应尽的义务或职责",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
