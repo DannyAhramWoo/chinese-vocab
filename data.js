@@ -2469,5 +2469,284 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakgyo_20260707_Community",
+    "source": "학교",
+    "date": "2026-07-07",
+    "lesson": "Unit 4 Community & Environment · 词汇表",
+    "groups": [
+      {
+        "name": "词汇表 · 단어 목록 (No.121~159)",
+        "words": [
+          {
+            "hanzi": "邻里",
+            "pinyin": "lín lǐ",
+            "korean": "Neighbourhood · 이웃 동네, 근린",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "志愿者",
+            "pinyin": "zhì yuàn zhě",
+            "korean": "Volunteer · 자원봉사자",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "环境",
+            "pinyin": "huán jìng",
+            "korean": "Environment · 환경",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "居民",
+            "pinyin": "jū mín",
+            "korean": "Resident · 주민",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "路旁",
+            "pinyin": "lù páng",
+            "korean": "Roadside · 길가, 도로변",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "图书馆",
+            "pinyin": "tú shū guǎn",
+            "korean": "Library · 도서관",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "药房",
+            "pinyin": "yào fáng",
+            "korean": "Pharmacy · 약국",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "节日",
+            "pinyin": "jié rì",
+            "korean": "Festival · 명절, 축제",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "传统",
+            "pinyin": "chuán tǒng",
+            "korean": "Tradition · 전통",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "大自然",
+            "pinyin": "dà zì rán",
+            "korean": "Nature · 자연",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "污染",
+            "pinyin": "wū rǎn",
+            "korean": "Pollution · 오염",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "慈善",
+            "pinyin": "cí shàn",
+            "korean": "Charity · 자선",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "乱扔垃圾",
+            "pinyin": "luàn rēng lā jī",
+            "korean": "Littering · 쓰레기 투기",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "公民",
+            "pinyin": "gōng mín",
+            "korean": "Citizen · 시민",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "交通",
+            "pinyin": "jiāo tōng",
+            "korean": "Traffic · 교통",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "博物馆",
+            "pinyin": "bó wù guǎn",
+            "korean": "Museum · 박물관",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "食堂",
+            "pinyin": "shí táng",
+            "korean": "Canteen · 구내식당",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "场合",
+            "pinyin": "chǎng hé",
+            "korean": "Occasion · 경우, 행사",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "文化",
+            "pinyin": "wén huà",
+            "korean": "Culture · 문화",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "风景",
+            "pinyin": "fēng jǐng",
+            "korean": "Scenery · 풍경, 경치",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "回收",
+            "pinyin": "huí shōu",
+            "korean": "Recycling · 재활용",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "捐款",
+            "pinyin": "juān kuǎn",
+            "korean": "Donation · 기부",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "清洁",
+            "pinyin": "qīng jié",
+            "korean": "Cleanliness · 청결",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "行人",
+            "pinyin": "xíng rén",
+            "korean": "Pedestrian · 보행자",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "信号灯",
+            "pinyin": "xìn hào dēng",
+            "korean": "Signal · 신호등",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "医院",
+            "pinyin": "yī yuàn",
+            "korean": "Hospital · 병원",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "小贩",
+            "pinyin": "xiǎo fàn",
+            "korean": "Hawker · 노점상, 호커",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "典礼",
+            "pinyin": "diǎn lǐ",
+            "korean": "Ceremony · 의식, 식전",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "国家",
+            "pinyin": "guó jiā",
+            "korean": "Country · 나라, 국가",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "运动",
+            "pinyin": "yùn dòng",
+            "korean": "Campaign · 캠페인, 운동",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "社区",
+            "pinyin": "shè qū",
+            "korean": "Community · 지역사회",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "卫生",
+            "pinyin": "wèi shēng",
+            "korean": "Hygiene · 위생",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "人行道",
+            "pinyin": "rén xíng dào",
+            "korean": "Pavement · 인도, 보도",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "横道",
+            "pinyin": "héng dào",
+            "korean": "Crossing · 횡단보도",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "诊所",
+            "pinyin": "zhěn suǒ",
+            "korean": "Clinic · 클리닉, 진료소",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "市场",
+            "pinyin": "shì chǎng",
+            "korean": "Market · 시장",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "假日",
+            "pinyin": "jià rì",
+            "korean": "Holiday · 휴일, 공휴일",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "岛屿",
+            "pinyin": "dǎo yǔ",
+            "korean": "Island · 섬",
+            "chinese_def": "",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
