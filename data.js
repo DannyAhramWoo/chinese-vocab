@@ -2748,5 +2748,163 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260802_T3L063",
+    "source": "학원",
+    "date": "2026-08-02",
+    "lesson": "T3L06-3",
+    "groups": [
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "养鱼养虾",
+            "pinyin": "yǎng yú yǎng xiā",
+            "korean": "물고기·새우를 기르다",
+            "chinese_def": "饲养鱼和虾",
+            "type": "word"
+          },
+          {
+            "hanzi": "森林",
+            "pinyin": "sēn lín",
+            "korean": "숲, 삼림",
+            "chinese_def": "大片树木的地方",
+            "type": "word"
+          },
+          {
+            "hanzi": "山洞",
+            "pinyin": "shān dòng",
+            "korean": "산 동굴",
+            "chinese_def": "山中的洞穴",
+            "type": "word"
+          },
+          {
+            "hanzi": "小桥",
+            "pinyin": "xiǎo qiáo",
+            "korean": "작은 다리",
+            "chinese_def": "小型桥梁",
+            "type": "word"
+          },
+          {
+            "hanzi": "沿着",
+            "pinyin": "yán zhe",
+            "korean": "~을 따라",
+            "chinese_def": "顺着某方向",
+            "type": "word"
+          },
+          {
+            "hanzi": "沙滩",
+            "pinyin": "shā tān",
+            "korean": "모래사장, 해변",
+            "chinese_def": "海边或河边的沙地",
+            "type": "word"
+          },
+          {
+            "hanzi": "拍照",
+            "pinyin": "pāi zhào",
+            "korean": "사진 찍다",
+            "chinese_def": "用相机拍摄照片",
+            "type": "word"
+          },
+          {
+            "hanzi": "讨论",
+            "pinyin": "tǎo lùn",
+            "korean": "토론하다",
+            "chinese_def": "就某问题交换意见",
+            "type": "word"
+          },
+          {
+            "hanzi": "漂亮",
+            "pinyin": "piào liàng",
+            "korean": "예쁘다, 아름답다",
+            "chinese_def": "外表好看",
+            "type": "word"
+          },
+          {
+            "hanzi": "虽然",
+            "pinyin": "suī rán",
+            "korean": "비록 ~이지만",
+            "chinese_def": "表示让步关系的连词",
+            "type": "word"
+          },
+          {
+            "hanzi": "但是",
+            "pinyin": "dàn shì",
+            "korean": "그러나, 하지만",
+            "chinese_def": "表示转折的连词",
+            "type": "word"
+          },
+          {
+            "hanzi": "仍然",
+            "pinyin": "réng rán",
+            "korean": "여전히, 아직도",
+            "chinese_def": "还是原来的样子",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "认读词语 · 읽기 단어",
+        "words": [
+          {
+            "hanzi": "小湖",
+            "pinyin": "xiǎo hú",
+            "korean": "작은 호수",
+            "chinese_def": "小型湖泊",
+            "type": "word"
+          },
+          {
+            "hanzi": "狐狸",
+            "pinyin": "hú li",
+            "korean": "여우",
+            "chinese_def": "一种狡猾的动物",
+            "type": "word"
+          },
+          {
+            "hanzi": "老虎",
+            "pinyin": "lǎo hǔ",
+            "korean": "호랑이",
+            "chinese_def": "大型猫科动物",
+            "type": "word"
+          },
+          {
+            "hanzi": "猩猩",
+            "pinyin": "xīng xing",
+            "korean": "오랑우탄, 침팬지",
+            "chinese_def": "大型灵长类动物",
+            "type": "word"
+          },
+          {
+            "hanzi": "信封",
+            "pinyin": "xìn fēng",
+            "korean": "편지 봉투",
+            "chinese_def": "装信件的封套",
+            "type": "word"
+          },
+          {
+            "hanzi": "必须",
+            "pinyin": "bì xū",
+            "korean": "반드시 ~해야 한다",
+            "chinese_def": "一定要",
+            "type": "word"
+          },
+          {
+            "hanzi": "带领",
+            "pinyin": "dài lǐng",
+            "korean": "이끌다, 인솔하다",
+            "chinese_def": "率领、领导",
+            "type": "word"
+          },
+          {
+            "hanzi": "任务",
+            "pinyin": "rèn wu",
+            "korean": "임무, 과제",
+            "chinese_def": "交代的工作或责任",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
