@@ -2386,5 +2386,88 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakgyo_20260802_IMG_8974",
+    "source": "학교",
+    "date": "2026-08-02",
+    "lesson": "听写十一 · 第十一课《环保小天使》",
+    "groups": [
+      {
+        "name": "听写句子 · 받아쓰기 문장",
+        "words": [
+          {
+            "hanzi": "组屋",
+            "pinyin": "zǔ wū",
+            "korean": "공공 아파트 (HDB)",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "停车场",
+            "pinyin": "tíng chē chǎng",
+            "korean": "주차장",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "旧报纸",
+            "pinyin": "jiù bào zhǐ",
+            "korean": "헌 신문지",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "为环境尽一份力",
+            "pinyin": "wèi huán jìng jìn yī fèn lì",
+            "korean": "환경을 위해 힘을 보태다",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我们不应该浪费电。",
+            "pinyin": "wǒ men bù yīng gāi làng fèi diàn。",
+            "korean": "우리는 전기를 낭비해서는 안 된다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "妈妈买了很多日用品。",
+            "pinyin": "māma mǎi le hěn duō rì yòng pǐn。",
+            "korean": "엄마가 생활용품을 많이 샀다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "爸爸买了一辆电动汽车。",
+            "pinyin": "bàba mǎi le yī liàng diàn dòng qì chē。",
+            "korean": "아빠가 전기자동차 한 대를 샀다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "因为弟弟乱扔垃圾，所以被妈妈骂。",
+            "pinyin": "yīn wèi dì di luàn rēng lā jī，suǒ yǐ bèi māma mà。",
+            "korean": "남동생이 쓰레기를 함부로 버려서 엄마에게 혼났다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "如果大家都使用环保袋，就可以保护环境。",
+            "pinyin": "rú guǒ dà jiā dōu shǐ yòng huán bǎo dài，jiù kě yǐ bǎo hù huán jìng。",
+            "korean": "만약 모두가 에코백을 사용한다면, 환경을 보호할 수 있다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我认为妈妈说得对，保护环境，人人有责。",
+            "pinyin": "wǒ rèn wéi māma shuō de duì，bǎo hù huán jìng，rén rén yǒu zé。",
+            "korean": "나는 엄마 말이 맞다고 생각한다. 환경 보호는 모두의 책임이다.",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      }
+    ]
   }
 ];
