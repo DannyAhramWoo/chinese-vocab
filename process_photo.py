@@ -135,11 +135,41 @@ def extract_words_from_image(client, image_path):
 
     return response.content[0].text
 
+# ── 문자열 앞부분에서 첫 JSON 객체만 추출 (AI가 JSON 뒤에 부가 설명을 덧붙이는 경우 대응) ──
+def extract_first_json_object(text):
+    start = text.find('{')
+    if start == -1:
+        return text
+    depth = 0
+    in_string = False
+    escape = False
+    for i in range(start, len(text)):
+        c = text[i]
+        if escape:
+            escape = False
+            continue
+        if c == '\\' and in_string:
+            escape = True
+            continue
+        if c == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if c == '{':
+            depth += 1
+        elif c == '}':
+            depth -= 1
+            if depth == 0:
+                return text[start:i + 1]
+    return text[start:]
+
 # ── JSON 안전 파싱 (AI 응답의 제어문자 자동 수정) ──
 def safe_parse_json(raw):
     raw = re.sub(r'^```json\s*', '', raw.strip())
     raw = re.sub(r'\s*```$', '', raw.strip())
     raw = raw.strip()
+    raw = extract_first_json_object(raw)
 
     try:
         return json.loads(raw)
