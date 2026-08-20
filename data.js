@@ -2907,5 +2907,88 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakgyo_20260820_IMG_9177",
+    "source": "학교",
+    "date": "2026-08-20",
+    "lesson": "听写十三 · 第十三课《寻路大挑战》",
+    "groups": [
+      {
+        "name": "听写句子 · 받아쓰기 문장",
+        "words": [
+          {
+            "hanzi": "沙滩",
+            "pinyin": "shā tān",
+            "korean": "모래사장, 해변",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "长得漂亮",
+            "pinyin": "zhǎng de piào liang",
+            "korean": "예쁘게 생겼다",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "小组讨论",
+            "pinyin": "xiǎo zǔ tǎo lùn",
+            "korean": "조별 토론",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "住在山洞里",
+            "pinyin": "zhù zài shān dòng lǐ",
+            "korean": "산 동굴 안에 살다",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "池里养着鱼和虾。",
+            "pinyin": "chí lǐ yǎng zhe yú hé xiā。",
+            "korean": "연못에 물고기와 새우를 기르고 있다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "森林里住着很多动物。",
+            "pinyin": "sēn lín lǐ zhù zhe hěn duō dòng wù。",
+            "korean": "숲 속에 많은 동물들이 살고 있다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "水公园里有一座小桥。",
+            "pinyin": "shuǐ gōng yuán lǐ yǒu yī zuò xiǎo qiáo。",
+            "korean": "워터파크 안에 작은 다리가 하나 있다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我们一家人给动物拍照。",
+            "pinyin": "wǒ men yī jiā rén gěi dòng wù pāi zhào。",
+            "korean": "우리 가족은 동물 사진을 찍었다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "沿着这条路走，就会看到学校。",
+            "pinyin": "yán zhe zhè tiáo lù zǒu，jiù huì kàn dào xué xiào。",
+            "korean": "이 길을 따라 걸으면 학교가 보일 것이다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我们虽然没有得到第一名，但是仍然很开心。",
+            "pinyin": "wǒ men suī rán méi yǒu dé dào dì yī míng，dàn shì réng rán hěn kāi xīn。",
+            "korean": "우리는 비록 1등을 하지 못했지만, 여전히 매우 즐거웠다.",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      }
+    ]
   }
 ];
