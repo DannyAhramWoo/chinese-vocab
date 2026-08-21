@@ -2990,5 +2990,170 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260821_L14",
+    "source": "학원",
+    "date": "2026-08-21",
+    "lesson": "L14",
+    "groups": [
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "真和假",
+            "pinyin": "zhēn hé jiǎ",
+            "korean": "진짜와 가짜",
+            "chinese_def": "表示真实与虚假的对比",
+            "type": "word"
+          },
+          {
+            "hanzi": "硬和软",
+            "pinyin": "yìng hé ruǎn",
+            "korean": "딱딱함과 부드러움",
+            "chinese_def": "表示坚硬与柔软的对比",
+            "type": "word"
+          },
+          {
+            "hanzi": "快和慢",
+            "pinyin": "kuài hé màn",
+            "korean": "빠름과 느림",
+            "chinese_def": "表示速度快与慢的对比",
+            "type": "word"
+          },
+          {
+            "hanzi": "苦",
+            "pinyin": "kǔ",
+            "korean": "쓰다, 괴롭다",
+            "chinese_def": "味道苦；或形容辛苦、痛苦",
+            "type": "word"
+          },
+          {
+            "hanzi": "灰色",
+            "pinyin": "huī sè",
+            "korean": "회색",
+            "chinese_def": "灰白色，介于黑色与白色之间的颜色",
+            "type": "word"
+          },
+          {
+            "hanzi": "嘴巴",
+            "pinyin": "zuǐ bā",
+            "korean": "입",
+            "chinese_def": "人或动物的口",
+            "type": "word"
+          },
+          {
+            "hanzi": "饱和饿",
+            "pinyin": "bǎo hé è",
+            "korean": "배부름과 배고픔",
+            "chinese_def": "表示吃饱与饥饿的对比",
+            "type": "word"
+          },
+          {
+            "hanzi": "熊猫",
+            "pinyin": "xióng māo",
+            "korean": "판다",
+            "chinese_def": "一种珍贵的黑白色哺乳动物",
+            "type": "word"
+          },
+          {
+            "hanzi": "笨重",
+            "pinyin": "bèn zhòng",
+            "korean": "둔하고 무겁다",
+            "chinese_def": "形容体型大而行动迟缓笨拙",
+            "type": "word"
+          },
+          {
+            "hanzi": "圆滚滚",
+            "pinyin": "yuán gǔn gǔn",
+            "korean": "동글동글하다",
+            "chinese_def": "形容圆圆的、胖乎乎的样子",
+            "type": "word"
+          },
+          {
+            "hanzi": "咬断",
+            "pinyin": "yǎo duàn",
+            "korean": "물어 끊다",
+            "chinese_def": "用牙齿咬使其断开",
+            "type": "word"
+          },
+          {
+            "hanzi": "有趣",
+            "pinyin": "yǒu qù",
+            "korean": "재미있다",
+            "chinese_def": "令人感到有意思、好玩",
+            "type": "word"
+          },
+          {
+            "hanzi": "懒洋洋",
+            "pinyin": "lǎn yáng yáng",
+            "korean": "나른하다, 게으르다",
+            "chinese_def": "形容懒散、无精打采的样子",
+            "type": "word"
+          },
+          {
+            "hanzi": "躺下",
+            "pinyin": "tǎng xià",
+            "korean": "눕다",
+            "chinese_def": "身体平躺下来",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "认读词语 · 읽기 단어",
+        "words": [
+          {
+            "hanzi": "强和弱",
+            "pinyin": "qiáng hé ruò",
+            "korean": "강함과 약함",
+            "chinese_def": "表示力量强与弱的对比",
+            "type": "word"
+          },
+          {
+            "hanzi": "慢吞吞",
+            "pinyin": "màn tūn tūn",
+            "korean": "느릿느릿하다",
+            "chinese_def": "形容动作非常缓慢的样子",
+            "type": "word"
+          },
+          {
+            "hanzi": "咸和淡",
+            "pinyin": "xián hé dàn",
+            "korean": "짬과 싱거움",
+            "chinese_def": "表示味道咸与淡的对比",
+            "type": "word"
+          },
+          {
+            "hanzi": "光滑",
+            "pinyin": "guāng huá",
+            "korean": "매끄럽다",
+            "chinese_def": "表面平整细腻，没有粗糙感",
+            "type": "word"
+          },
+          {
+            "hanzi": "散步",
+            "pinyin": "sàn bù",
+            "korean": "산책하다",
+            "chinese_def": "随意地慢慢走动",
+            "type": "word"
+          },
+          {
+            "hanzi": "玩耍",
+            "pinyin": "wán shuǎ",
+            "korean": "놀다",
+            "chinese_def": "嬉戏游玩",
+            "type": "word"
+          },
+          {
+            "hanzi": "不够",
+            "pinyin": "bù gòu",
+            "korean": "부족하다, 충분하지 않다",
+            "chinese_def": "数量或程度达不到要求",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
