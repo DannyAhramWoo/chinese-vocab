@@ -19,6 +19,7 @@ photos/학원/IMG_8823.jpeg
 photos/학원/IMG_8824.jpeg
 photos/학원/IMG_8973.jpeg
 photos/학원/IMG_9181.jpeg
+photos/학원/IMG_9226.jpeg
 photos/학원/academy.jpeg
 photos/학원/academy1.jpeg
 photos/학원/image.jpg

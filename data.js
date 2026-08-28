@@ -3155,5 +3155,147 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakwon_20260828_L15",
+    "source": "학원",
+    "date": "2026-08-28",
+    "lesson": "L15",
+    "groups": [
+      {
+        "name": "词语解释 · 단어 해설",
+        "words": [
+          {
+            "hanzi": "忍不住",
+            "pinyin": "rěn bù zhù",
+            "korean": "참을 수 없다, 어쩔 수 없이 ~하다",
+            "chinese_def": "忍了很久，受不了了，处于一种要爆发，不能自制的极点。",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "习写词语 · 쓰기 단어",
+        "words": [
+          {
+            "hanzi": "小偷",
+            "pinyin": "xiǎo tōu",
+            "korean": "도둑",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "课室",
+            "pinyin": "kè shì",
+            "korean": "교실",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "逃走",
+            "pinyin": "táo zǒu",
+            "korean": "도망치다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "吓得两腿发软",
+            "pinyin": "xià de liǎng tuǐ fā ruǎn",
+            "korean": "놀라서 두 다리가 후들거리다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "发抖",
+            "pinyin": "fā dǒu",
+            "korean": "떨다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "不敢",
+            "pinyin": "bù gǎn",
+            "korean": "감히 ~하지 못하다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "写字班",
+            "pinyin": "xiě zì bān",
+            "korean": "글씨 쓰기 수업반",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "痛得冒出冷汗",
+            "pinyin": "tòng de mào chū lěng hàn",
+            "korean": "너무 아파서 식은땀이 나다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "简单",
+            "pinyin": "jiǎn dān",
+            "korean": "간단하다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "漫画",
+            "pinyin": "màn huà",
+            "korean": "만화",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "忍不住",
+            "pinyin": "rěn bù zhù",
+            "korean": "참을 수 없다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "哈哈大笑",
+            "pinyin": "hā hā dà xiào",
+            "korean": "하하 크게 웃다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "挖洞",
+            "pinyin": "wā dòng",
+            "korean": "구멍을 파다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "钻进怀里",
+            "pinyin": "zuān jìn huái lǐ",
+            "korean": "품속으로 파고들다",
+            "chinese_def": "",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "认读词语 · 읽기 단어",
+        "words": [
+          {
+            "hanzi": "朱",
+            "pinyin": "zhū",
+            "korean": "성씨 주",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "哎呀",
+            "pinyin": "āi yā",
+            "korean": "아이고, 이런 (감탄사)",
+            "chinese_def": "",
+            "type": "word"
+          }
+        ]
+      }
+    ]
   }
 ];
