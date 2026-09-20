@@ -3380,5 +3380,335 @@ window.VOCAB_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "hakgyo_20260920_IMG_9462",
+    "source": "학교",
+    "date": "2026-09-20",
+    "lesson": "听写十六 & 听写十七",
+    "groups": [
+      {
+        "name": "听写十六 · 第十六课《学习要认真》· 받아쓰기 문장",
+        "words": [
+          {
+            "hanzi": "数学作业",
+            "pinyin": "shù xué zuò yè",
+            "korean": "수학 숙제",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "喜欢跳舞",
+            "pinyin": "xǐ huān tiào wǔ",
+            "korean": "춤추는 것을 좋아하다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "认识同学",
+            "pinyin": "rèn shi tóng xué",
+            "korean": "친구를 알다 / 급우를 알게 되다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "兄弟俩一起到公园吹泡泡。",
+            "pinyin": "xiōng dì liǎ yī qǐ dào gōng yuán chuī pào pào。",
+            "korean": "형제 둘이 함께 공원에 가서 비눗방울을 불었다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "丽丽用圈圈代替不会写的字。",
+            "pinyin": "Lì lì yòng quān quān dài tì bù huì xiě de zì。",
+            "korean": "리리는 동그라미로 쓸 줄 모르는 글자를 대신했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我们终于明白了：学习要认真。",
+            "pinyin": "wǒ men zhōng yú míng bái le：xué xí yào rèn zhēn。",
+            "korean": "우리는 마침내 깨달았다: 공부는 성실하게 해야 한다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "他红着脸，低下头，不敢抬起头来。",
+            "pinyin": "tā hóng zhe liǎn，dī xià tóu，bù gǎn tái qǐ tóu lái。",
+            "korean": "그는 얼굴을 붉히며 고개를 숙이고, 감히 고개를 들지 못했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "他那么爱看书，却有很多不会写的字。",
+            "pinyin": "tā nà me ài kàn shū，què yǒu hěn duō bù huì xiě de zì。",
+            "korean": "그는 책 읽기를 그렇게 좋아하면서도 쓸 줄 모르는 글자가 많았다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "大家看到路上有一条蛇，吓得两腿发软。",
+            "pinyin": "dà jiā kàn dào lù shàng yǒu yī tiáo shé，xià de liǎng tuǐ fā ruǎn。",
+            "korean": "모두가 길 위에 뱀이 있는 것을 보고 놀라서 두 다리가 풀렸다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "弟弟没有把食物吃完，结果过了一会儿就饿了。",
+            "pinyin": "dì di méi yǒu bǎ shí wù chī wán，jié guǒ guò le yī huì er jiù è le。",
+            "korean": "남동생이 음식을 다 먹지 않았더니, 결국 잠시 후 배가 고파졌다.",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      },
+      {
+        "name": "听写十七 · 第十七课《好孩子》· 받아쓰기 문장",
+        "words": [
+          {
+            "hanzi": "减少浪费",
+            "pinyin": "jiǎn shǎo làng fèi",
+            "korean": "낭비를 줄이다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "检查答案",
+            "pinyin": "jiǎn chá dá àn",
+            "korean": "답안을 검사하다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "笑去笑容",
+            "pinyin": "xiào qù xiào róng",
+            "korean": "웃음을 잃다 / 웃음기가 사라지다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "感到开心",
+            "pinyin": "gǎn dào kāi xīn",
+            "korean": "기쁨을 느끼다",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "金银财宝",
+            "pinyin": "jīn yín cái bǎo",
+            "korean": "금은보화",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "妹妹这次考试考得不好。",
+            "pinyin": "mèi mei zhè cì kǎo shì kǎo de bù hǎo。",
+            "korean": "여동생은 이번 시험을 잘 보지 못했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我立刻把好消息告诉爸爸。",
+            "pinyin": "wǒ lì kè bǎ hǎo xiāo xi gào su bà ba。",
+            "korean": "나는 즉시 좋은 소식을 아빠에게 알렸다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "你们不可以摘公园里的花。",
+            "pinyin": "nǐ men bù kě yǐ zhāi gōng yuán lǐ de huā。",
+            "korean": "너희는 공원의 꽃을 꺾으면 안 된다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "猴子一起合作，想把月亮捞上来。",
+            "pinyin": "hóu zi yī qǐ hé zuò，xiǎng bǎ yuè liang lāo shàng lái。",
+            "korean": "원숭이들이 함께 협력하여 달을 건져 올리려 했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "你千万不要乱开门，等妈妈回来再说。",
+            "pinyin": "nǐ qiān wàn bù yào luàn kāi mén，děng mā ma huí lái zài shuō。",
+            "korean": "절대로 함부로 문을 열지 말고, 엄마가 돌아올 때까지 기다려라.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "最后，我做了个决定，放下了心中的大石头。",
+            "pinyin": "zuì hòu，wǒ zuò le gè jué dìng，fàng xià le xīn zhōng de dà shí tou。",
+            "korean": "마지막으로, 나는 결정을 내리고 마음속의 큰 돌덩이를 내려놓았다.",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hakgyo_20260920_IMG_9463",
+    "source": "학교",
+    "date": "2026-09-20",
+    "lesson": "听写十四 & 听写十五",
+    "groups": [
+      {
+        "name": "听写十四 · 第十四课《奇妙的动物》받아쓰기 문장",
+        "words": [
+          {
+            "hanzi": "真假难分",
+            "pinyin": "zhēn jiǎ nán fēn",
+            "korean": "진짜와 가짜를 구분하기 어렵다",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "面包软软的。",
+            "pinyin": "miàn bāo ruǎn ruǎn de.",
+            "korean": "빵이 말랑말랑하다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "石头硬硬的。",
+            "pinyin": "shí tou yìng yìng de.",
+            "korean": "돌이 딱딱하다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "慢慢地爬下来",
+            "pinyin": "màn màn de pá xià lái",
+            "korean": "천천히 기어 내려오다",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "大熊猫把竹子咬断了。",
+            "pinyin": "dà xióng māo bǎ zhú zi yǎo duàn le.",
+            "korean": "대왕판다가 대나무를 물어 끊었다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "弟弟笑得在地上直打滚。",
+            "pinyin": "dì di xiào de zài dì shang zhí dǎ gǔn.",
+            "korean": "남동생이 땅에서 데굴데굴 구를 정도로 웃었다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我刚才很饿，现在却很饱。",
+            "pinyin": "wǒ gāng cái hěn è, xiàn zài què hěn bǎo.",
+            "korean": "나는 방금 전에 배가 많이 고팠는데, 지금은 오히려 배가 부르다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "苦瓜很苦，弟弟不喜欢吃。",
+            "pinyin": "kǔ guā hěn kǔ, dì di bù xǐ huān chī.",
+            "korean": "여주는 매우 쓰다, 남동생은 먹기 싫어한다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "天空灰灰的，好像要下雨了。",
+            "pinyin": "tiān kōng huī huī de, hǎo xiàng yào xià yǔ le.",
+            "korean": "하늘이 회색빛이라 비가 올 것 같다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "弟弟又可爱又有趣，大家都喜欢他。",
+            "pinyin": "dì di yòu kě ài yòu yǒu qù, dà jiā dōu xǐ huān tā.",
+            "korean": "남동생은 귀엽기도 하고 재미있기도 해서, 모두가 그를 좋아한다.",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      },
+      {
+        "name": "听写十五 · 第十五课《华文真有趣》받아쓰기 문장",
+        "words": [
+          {
+            "hanzi": "课堂",
+            "pinyin": "kè táng",
+            "korean": "교실, 수업 시간",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "画画班",
+            "pinyin": "huà huà bān",
+            "korean": "그림 그리기 반",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "漫画书",
+            "pinyin": "màn huà shū",
+            "korean": "만화책",
+            "chinese_def": "",
+            "type": "word"
+          },
+          {
+            "hanzi": "小偷逃跑了",
+            "pinyin": "xiǎo tōu táo pǎo le",
+            "korean": "도둑이 도망갔다",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "听写太简单了！",
+            "pinyin": "tīng xiě tài jiǎn dān le!",
+            "korean": "받아쓰기가 너무 쉽다!",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "弟弟被吓哭了。",
+            "pinyin": "dì di bèi xià kū le.",
+            "korean": "남동생이 놀라서 울었다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "美美忍不住哈哈大笑起来。",
+            "pinyin": "měi měi rěn bù zhù hā hā dà xiào qǐ lái.",
+            "korean": "메이메이가 참지 못하고 하하 크게 웃기 시작했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "他瘦得冒出冷汗，全身发抖。",
+            "pinyin": "tā xià de mào chū lěng hàn, quán shēn fā dǒu.",
+            "korean": "그는 식은땀이 날 정도로 무서워서 온몸이 떨렸다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "他被爸爸骂得一动也不敢动。",
+            "pinyin": "tā bèi bà ba mà de yī dòng yě bù gǎn dòng.",
+            "korean": "그는 아버지에게 혼나서 꼼짝도 못했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "我真想在地上挖个洞钻进去。",
+            "pinyin": "wǒ zhēn xiǎng zài dì shang wā gè dòng zuān jìn qù.",
+            "korean": "나는 정말 땅에 구멍을 파고 들어가고 싶다.",
+            "chinese_def": "",
+            "type": "sentence"
+          },
+          {
+            "hanzi": "妈妈急得像热锅上的蚂蚁。",
+            "pinyin": "māma jí de xiàng rè guō shàng de mǎ yǐ.",
+            "korean": "엄마는 뜨거운 솥 위의 개미처럼 안절부절못했다.",
+            "chinese_def": "",
+            "type": "sentence"
+          }
+        ]
+      }
+    ]
   }
 ];

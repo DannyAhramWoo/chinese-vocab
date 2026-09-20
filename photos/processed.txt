@@ -10,6 +10,8 @@ photos/학교/IMG_8809.jpeg
 photos/학교/IMG_8974.jpeg
 photos/학교/IMG_9177.jpeg
 photos/학교/IMG_9251.jpeg
+photos/학교/IMG_9462.jpeg
+photos/학교/IMG_9463.jpeg
 photos/학원/IMG_7931.HEIC
 photos/학원/IMG_7933.jpeg
 photos/학원/IMG_7969.jpeg
